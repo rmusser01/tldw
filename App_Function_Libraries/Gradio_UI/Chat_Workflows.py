@@ -24,7 +24,7 @@ with json_path.open('r') as f:
 
 
 def chat_workflows_tab():
-    with gr.TabItem("Chat Workflows"):
+    with gr.TabItem("Chat Workflows", visible=True):
         gr.Markdown("# Workflows using LLMs")
         chat_history = gr.State([])
         media_content = gr.State({})

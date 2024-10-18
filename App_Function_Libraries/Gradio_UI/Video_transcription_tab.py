@@ -32,7 +32,7 @@ from App_Function_Libraries.Metrics.metrics_logger import log_counter, log_histo
 # Functions:
 
 def create_video_transcription_tab():
-    with ((gr.TabItem("Video Transcription + Summarization"))):
+    with gr.TabItem("Video Transcription + Summarization", visible=True):
         gr.Markdown("# Transcribe & Summarize Videos from URLs")
         with gr.Row():
             gr.Markdown("""Follow this project at [tldw - GitHub](https://github.com/rmusser01/tldw)""")

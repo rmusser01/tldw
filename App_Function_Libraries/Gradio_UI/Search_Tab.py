@@ -80,7 +80,7 @@ def format_as_html(content, title):
     """
 
 def create_search_tab():
-    with gr.TabItem("Search / Detailed View"):
+    with gr.TabItem("Search / Detailed View", visible=True):
         gr.Markdown("# Search across all ingested items in the Database")
         with gr.Row():
             with gr.Column(scale=1):
@@ -150,7 +150,7 @@ def display_search_results(query):
 
 
 def create_search_summaries_tab():
-    with gr.TabItem("Search/View Title+Summary "):
+    with gr.TabItem("Search/View Title+Summary", visible=True):
         gr.Markdown("# Search across all ingested items in the Database and review their summaries")
         gr.Markdown("Search by Title / URL / Keyword / or Content via SQLite Full-Text-Search")
         with gr.Row():
@@ -207,7 +207,7 @@ def create_search_summaries_tab():
 
 
 def create_prompt_search_tab():
-    with gr.TabItem("Search Prompts"):
+    with gr.TabItem("Search Prompts", visible=True):
         gr.Markdown("# Search and View Prompt Details")
         gr.Markdown("Currently has all of the https://github.com/danielmiessler/fabric prompts already available")
         with gr.Row():

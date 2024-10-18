@@ -206,7 +206,7 @@ def create_chat_interface():
         font-size: 14px !important;
     }
     """
-    with gr.TabItem("Remote LLM Chat (Horizontal)"):
+    with gr.TabItem("Remote LLM Chat (Horizontal)", visible=True):
         gr.Markdown("# Chat with a designated LLM Endpoint, using your selected item as starting context")
         chat_history = gr.State([])
         media_content = gr.State({})
@@ -417,7 +417,7 @@ def create_chat_interface_stacked():
         font-size: 14px !important;
     }
     """
-    with gr.TabItem("Remote LLM Chat - Stacked"):
+    with gr.TabItem("Remote LLM Chat - Stacked", visible=True):
         gr.Markdown("# Stacked Chat")
         chat_history = gr.State([])
         media_content = gr.State({})
@@ -580,7 +580,7 @@ def create_chat_interface_multi_api():
         overflow-y: auto;
     }
     """
-    with gr.TabItem("One Prompt - Multiple APIs"):
+    with gr.TabItem("One Prompt - Multiple APIs", visible=True):
         gr.Markdown("# One Prompt but Multiple APIs Chat Interface")
 
         with gr.Row():
@@ -759,7 +759,7 @@ def create_chat_interface_four():
     }
     """
 
-    with gr.TabItem("Four Independent API Chats"):
+    with gr.TabItem("Four Independent API Chats", visible=True):
         gr.Markdown("# Four Independent API Chat Interfaces")
 
         with gr.Row():
@@ -956,7 +956,7 @@ def chat_wrapper_single(message, chat_history, chatbot, api_endpoint, api_key, t
 
 # FIXME - Finish implementing functions + testing/valdidation
 def create_chat_management_tab():
-    with gr.TabItem("Chat Management"):
+    with gr.TabItem("Chat Management", visible=True):
         gr.Markdown("# Chat Management")
 
         with gr.Row():
@@ -967,12 +967,12 @@ def create_chat_management_tab():
         conversation_mapping = gr.State({})
 
         with gr.Tabs():
-            with gr.TabItem("Edit"):
+            with gr.TabItem("Edit", visible=True):
                 chat_content = gr.TextArea(label="Chat Content (JSON)", lines=20, max_lines=50)
                 save_button = gr.Button("Save Changes")
                 delete_button = gr.Button("Delete Conversation", variant="stop")
 
-            with gr.TabItem("Preview"):
+            with gr.TabItem("Preview", visible=True):
                 chat_preview = gr.HTML(label="Chat Preview")
         result_message = gr.Markdown("")
 

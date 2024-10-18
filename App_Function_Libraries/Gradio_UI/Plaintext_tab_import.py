@@ -23,7 +23,7 @@ from App_Function_Libraries.Gradio_UI.Import_Functionality import import_data
 # Functions:
 
 def create_plain_text_import_tab():
-    with gr.TabItem("Import Plain text & .docx Files"):
+    with gr.TabItem("Import Plain text & .docx Files", visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown("# Import Markdown(`.md`)/Text(`.txt`)/rtf & `.docx` Files")

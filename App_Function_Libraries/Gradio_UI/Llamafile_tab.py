@@ -74,7 +74,7 @@ def create_chat_with_llamafile_tab():
             logging.error(f"Error downloading model: {e}")
             return f"Failed to download model: {e}", ""
 
-    with gr.TabItem("Local LLM with Llamafile"):
+    with gr.TabItem("Local LLM with Llamafile", visible=True):
         gr.Markdown("# Settings for Llamafile")
 
         with gr.Row():

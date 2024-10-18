@@ -34,7 +34,7 @@ def restore_backup(backup_name: str) -> str:
 
 
 def create_backup_tab():
-    with gr.Tab("Create Backup"):
+    with gr.Tab("Create Backup", visible=True):
         gr.Markdown("# Create a backup of the database")
         gr.Markdown("This will create a backup of the database in the backup directory(the default backup directory is `/tldw_DB_Backups/')")
         with gr.Row():
@@ -46,7 +46,7 @@ def create_backup_tab():
 
 
 def create_view_backups_tab():
-    with gr.TabItem("View Backups"):
+    with gr.TabItem("View Backups", visible=True):
         gr.Markdown("# Browse available backups")
         with gr.Row():
             with gr.Column():
@@ -57,7 +57,7 @@ def create_view_backups_tab():
 
 
 def create_restore_backup_tab():
-    with gr.TabItem("Restore Backup"):
+    with gr.TabItem("Restore Backup", visible=True):
         gr.Markdown("# Restore a backup of the database")
         with gr.Column():
             backup_input = gr.Textbox(label="Backup Filename")

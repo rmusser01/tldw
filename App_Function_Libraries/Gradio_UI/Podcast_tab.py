@@ -17,8 +17,8 @@ from App_Function_Libraries.Gradio_UI.Gradio_Shared import whisper_models, updat
 
 
 def create_podcast_tab():
-    with gr.TabItem("Podcast"):
-        gr.Markdown("# Podcast Transcription and Ingestion")
+    with gr.TabItem("Podcast", visible=True):
+        gr.Markdown("# Podcast Transcription and Ingestion", visible=True)
         with gr.Row():
             with gr.Column():
                 podcast_url_input = gr.Textbox(label="Podcast URL", placeholder="Enter the podcast URL here")

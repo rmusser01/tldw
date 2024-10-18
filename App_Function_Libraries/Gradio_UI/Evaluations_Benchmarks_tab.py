@@ -6,7 +6,7 @@ import gradio as gr
 from App_Function_Libraries.Benchmarks_Evaluations.ms_g_eval import run_geval
 
 def create_geval_tab():
-    with gr.Tab("G-Eval"):
+    with gr.Tab("G-Eval", visible=True):
         gr.Markdown("# G-Eval Summarization Evaluation")
         with gr.Row():
             with gr.Column():
@@ -31,7 +31,7 @@ def create_geval_tab():
 
 
 def create_infinite_bench_tab():
-    with gr.Tab("Infinite Bench"):
+    with gr.Tab("Infinite Bench", visible=True):
         gr.Markdown("# Infinite Bench Evaluation (Coming Soon)")
         with gr.Row():
             with gr.Column():

@@ -25,7 +25,7 @@ def save_config_from_text(text):
 
 
 def create_config_editor_tab():
-    with gr.TabItem("Edit Config"):
+    with gr.TabItem("Edit Config", visible=True):
         gr.Markdown("# Edit Configuration File")
 
         with gr.Row():

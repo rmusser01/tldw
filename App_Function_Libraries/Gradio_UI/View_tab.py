@@ -22,7 +22,7 @@ from App_Function_Libraries.DB.DB_Manager import (
 
 # FIXME - Doesn't work. also need ot merge this tab wtih Edit Existing Items tab....
 def create_manage_items_tab():
-    with gr.TabItem("Edit/Manage DB Items"):
+    with gr.TabItem("Edit/Manage DB Items", visible=True):
         search_input = gr.Textbox(label="Search for Media (title or ID)")
         search_button = gr.Button("Search")
         media_selector = gr.Dropdown(label="Select Media", choices=[], interactive=True)

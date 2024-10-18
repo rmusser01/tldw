@@ -41,7 +41,7 @@ def grammar_style_check(input_text, custom_prompt, api_name, api_key, system_pro
 
 
 def create_grammar_style_check_tab():
-    with gr.TabItem("Grammar and Style Check"):
+    with gr.TabItem("Grammar and Style Check", visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown("# Grammar and Style Check")
@@ -98,7 +98,7 @@ def create_grammar_style_check_tab():
 
 
 def create_tone_adjustment_tab():
-    with gr.TabItem("Tone Analyzer & Editor"):
+    with gr.TabItem("Tone Analyzer & Editor", visible=True):
         with gr.Row():
             with gr.Column():
                 input_text = gr.Textbox(label="Input Text", lines=10)
@@ -174,7 +174,7 @@ def generate_feedback_history_html(history):
 
 # FIXME
 def create_document_feedback_tab():
-    with gr.TabItem("Writing Feedback"):
+    with gr.TabItem("Writing Feedback", visible=True):
         with gr.Row():
             with gr.Column(scale=2):
                 input_text = gr.Textbox(label="Your Writing", lines=10)
@@ -364,13 +364,13 @@ def create_document_feedback_tab():
 
 
 def create_creative_writing_tab():
-    with gr.TabItem("Creative Writing Assistant"):
+    with gr.TabItem("Creative Writing Assistant", visible=True):
         gr.Markdown("# Utility to be added...")
 
 
 
 def create_mikupad_tab():
-    with gr.TabItem("Mikupad"):
+    with gr.TabItem("Mikupad", visible=True):
         gr.Markdown("I Wish. Gradio won't embed it successfully...")
 
 #

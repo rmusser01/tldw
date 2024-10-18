@@ -253,7 +253,7 @@ def character_interaction(character1: str, character2: str, api_endpoint: str, a
 
 
 def create_multiple_character_chat_tab():
-    with gr.TabItem("Multi-Character Chat"):
+    with gr.TabItem("Multi-Character Chat", visible=True):
         characters, conversation, current_character, other_character = character_interaction_setup()
 
         with gr.Blocks() as character_interaction:
@@ -393,7 +393,7 @@ def create_multiple_character_chat_tab():
 
 # From `Fuzzlewumper` on Reddit.
 def create_narrator_controlled_conversation_tab():
-    with gr.TabItem("Narrator-Controlled Conversation"):
+    with gr.TabItem("Narrator-Controlled Conversation", visible=True):
         gr.Markdown("# Narrator-Controlled Conversation")
 
         with gr.Row():

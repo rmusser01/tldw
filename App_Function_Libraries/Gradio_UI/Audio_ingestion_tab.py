@@ -20,7 +20,7 @@ from App_Function_Libraries.Metrics.logger_config import logger
 # Functions:
 
 def create_audio_processing_tab():
-    with gr.TabItem("Audio File Transcription + Summarization"):
+    with gr.TabItem("Audio File Transcription + Summarization", visible=True):
         gr.Markdown("# Transcribe & Summarize Audio Files from URLs or Local Files!")
         with gr.Row():
             with gr.Column():

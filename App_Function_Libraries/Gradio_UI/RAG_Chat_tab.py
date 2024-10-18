@@ -16,7 +16,7 @@ from App_Function_Libraries.RAG.RAG_Library_2 import enhanced_rag_pipeline
 # Functions:
 
 def create_rag_tab():
-    with gr.TabItem("RAG Search"):
+    with gr.TabItem("RAG Search", visible=True):
         gr.Markdown("# Retrieval-Augmented Generation (RAG) Search")
 
         with gr.Row():

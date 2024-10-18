@@ -78,7 +78,7 @@ def run_benchmark_from_ui(url, api_key, model, timeout, category, parallel, verb
 
 def create_mmlu_pro_tab():
     """Create the Gradio UI tab for MMLU-Pro Benchmark."""
-    with gr.Tab("MMLU-Pro Benchmark"):
+    with gr.TabItem("MMLU-Pro Benchmark", visible=True):
         gr.Markdown("## Run MMLU-Pro Benchmark")
 
         with gr.Row():

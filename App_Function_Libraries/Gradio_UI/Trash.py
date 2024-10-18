@@ -69,7 +69,7 @@ def mark_item_as_trash(media_id: int) -> str:
 
 
 def create_search_and_mark_trash_tab():
-    with gr.TabItem("Search and Mark as Trash"):
+    with gr.TabItem("Search and Mark as Trash", visible=True):
         gr.Markdown("# Search for Items and Mark as Trash")
 
         search_input = gr.Textbox(label="Search Query")
@@ -105,14 +105,14 @@ def create_search_and_mark_trash_tab():
 
 
 def create_view_trash_tab():
-    with gr.TabItem("View Trash"):
+    with gr.TabItem("View Trash", visible=True):
         view_button = gr.Button("View Trash")
         trash_list = gr.Textbox(label="Trashed Items")
         view_button.click(list_trash, inputs=[], outputs=trash_list)
 
 
 def create_delete_trash_tab():
-    with gr.TabItem("Delete DB Item"):
+    with gr.TabItem("Delete DB Item", visible=True):
         gr.Markdown("# Delete Items from Databases")
 
         media_id_input = gr.Number(label="Media ID")
@@ -128,7 +128,7 @@ def create_delete_trash_tab():
 
 
 def create_empty_trash_tab():
-    with gr.TabItem("Empty Trash"):
+    with gr.TabItem("Empty Trash", visible=True):
         days_input = gr.Slider(minimum=15, maximum=90, step=5, label="Delete items older than (days)")
         empty_button = gr.Button("Empty Trash")
         empty_output = gr.Textbox(label="Result")

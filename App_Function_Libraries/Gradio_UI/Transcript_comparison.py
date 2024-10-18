@@ -46,7 +46,7 @@ def compare_transcripts(media_id, transcript1_id, transcript2_id):
 
 
 def create_compare_transcripts_tab():
-    with gr.TabItem("Compare Transcripts"):
+    with gr.TabItem("Compare Transcripts", visible=True):
         gr.Markdown("# Compare Transcripts")
 
         with gr.Row():

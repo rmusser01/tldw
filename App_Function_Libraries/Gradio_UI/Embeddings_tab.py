@@ -22,7 +22,7 @@ from App_Function_Libraries.Chunk_Lib import improved_chunking_process, chunk_fo
 # Functions:
 
 def create_embeddings_tab():
-    with gr.TabItem("Create Embeddings"):
+    with gr.TabItem("Create Embeddings", visible=True):
         gr.Markdown("# Create Embeddings for All Content")
 
         with gr.Row():
@@ -185,7 +185,7 @@ def create_embeddings_tab():
 
 
 def create_view_embeddings_tab():
-    with gr.TabItem("View/Update Embeddings"):
+    with gr.TabItem("View/Update Embeddings", visible=True):
         gr.Markdown("# View and Update Embeddings")
         item_mapping = gr.State({})
         with gr.Row():
@@ -475,7 +475,7 @@ def create_view_embeddings_tab():
 
 
 def create_purge_embeddings_tab():
-    with gr.TabItem("Purge Embeddings"):
+    with gr.TabItem("Purge Embeddings", visible=True):
         gr.Markdown("# Purge Embeddings")
 
         with gr.Row():

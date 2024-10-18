@@ -16,7 +16,7 @@ from App_Function_Libraries.DB.DB_Manager import get_db_config
 
 
 def create_introduction_tab():
-    with (gr.TabItem("Introduction")):
+    with gr.TabItem("Introduction", visible=True):
         db_config = get_db_config()
         db_type = db_config['type']
         gr.Markdown(f"# tldw: Your LLM-powered Research Multi-tool (Using {db_type.capitalize()} Database)")

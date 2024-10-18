@@ -10,7 +10,7 @@ from App_Function_Libraries.Utils.Utils import sanitize_filename, downloaded_fil
 
 
 def create_utilities_yt_video_tab():
-    with gr.Tab("YouTube Video Downloader", id='youtube_dl'):
+    with gr.TabItem("YouTube Video Downloader", id='youtube_dl', visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown(
@@ -28,7 +28,7 @@ def create_utilities_yt_video_tab():
         )
 
 def create_utilities_yt_audio_tab():
-    with gr.Tab("YouTube Audio Downloader", id="youtube audio downloader"):
+    with gr.TabItem("YouTube Audio Downloader", id="youtube audio downloader", visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown(
@@ -48,7 +48,7 @@ def create_utilities_yt_audio_tab():
         )
 
 def create_utilities_yt_timestamp_tab():
-    with gr.Tab("YouTube Timestamp URL Generator", id="timestamp-gen"):
+    with gr.TabItem("YouTube Timestamp URL Generator", id="timestamp-gen", visible=True):
         gr.Markdown("## Generate YouTube URL with Timestamp")
         with gr.Row():
             with gr.Column():

@@ -21,7 +21,7 @@ from App_Function_Libraries.PDF.PDF_Ingestion_Lib import extract_metadata_from_p
 # Functions:
 
 def create_pdf_ingestion_tab():
-    with gr.TabItem("PDF Ingestion"):
+    with gr.TabItem("PDF Ingestion", visible=True):
         # TODO - Add functionality to extract metadata from pdf as part of conversion process in marker
         gr.Markdown("# Ingest PDF Files and Extract Metadata")
         with gr.Row():
@@ -136,7 +136,7 @@ def test_pdf_ingestion(pdf_file):
         return f"Error ingesting PDF: {str(e)}", ""
 
 def create_pdf_ingestion_test_tab():
-    with gr.TabItem("Test PDF Ingestion"):
+    with gr.TabItem("Test PDF Ingestion", visible=True):
         with gr.Row():
             with gr.Column():
                 pdf_file_input = gr.File(label="Upload PDF for testing")

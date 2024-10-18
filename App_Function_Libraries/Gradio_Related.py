@@ -270,7 +270,7 @@ def launch_ui(share_public=None, server_mode=False):
         gr.Markdown(f"# tl/dw: Your LLM-powered Research Multi-tool")
         gr.Markdown(f"(Using {db_type.capitalize()} Database)")
         with gr.Tabs():
-            with gr.TabItem("Transcription / Summarization / Ingestion", id="ingestion-grouping"):
+            with gr.TabItem("Transcription / Summarization / Ingestion", id="ingestion-grouping", visible=True):
                 with gr.Tabs():
                     create_video_transcription_tab()
                     create_audio_processing_tab()
@@ -285,18 +285,18 @@ def launch_ui(share_public=None, server_mode=False):
                     create_live_recording_tab()
                     create_arxiv_tab()
 
-            with gr.TabItem("Text Search", id="text search"):
+            with gr.TabItem("Text Search", id="text search", visible=True):
                 create_search_tab()
                 create_search_summaries_tab()
 
-            with gr.TabItem("RAG Chat+Notes", id="RAG Chat Notes group"):
+            with gr.TabItem("RAG Chat+Notes", id="RAG Chat Notes group", visible=True):
                 create_rag_qa_chat_notes_tab()
 
-            with gr.TabItem("RAG Search", id="RAG Search grou"):
+            with gr.TabItem("RAG Search", id="RAG Search group", visible=True):
                 create_rag_tab()
                 create_rag_qa_chat_tab()
 
-            with gr.TabItem("Chat with an LLM", id="LLM Chat group"):
+            with gr.TabItem("Chat with an LLM", id="LLM Chat group", visible=True):
                 create_chat_interface()
                 create_chat_interface_stacked()
                 create_chat_interface_multi_api()
@@ -306,18 +306,17 @@ def launch_ui(share_public=None, server_mode=False):
                 chat_workflows_tab()
 
 
-            with gr.TabItem("Character Chat", id="character chat group"):
-                with gr.Tabs():
-                    create_character_card_interaction_tab()
-                    create_character_chat_mgmt_tab()
-                    create_custom_character_card_tab()
-                    create_character_card_validation_tab()
-                    create_multiple_character_chat_tab()
-                    create_narrator_controlled_conversation_tab()
-                    create_export_characters_tab()
+            with gr.TabItem("Character Chat", id="character chat group", visible=True):
+                create_character_card_interaction_tab()
+                create_character_chat_mgmt_tab()
+                create_custom_character_card_tab()
+                create_character_card_validation_tab()
+                create_multiple_character_chat_tab()
+                create_narrator_controlled_conversation_tab()
+                create_export_characters_tab()
 
 
-            with gr.TabItem("View DB Items", id="view db items group"):
+            with gr.TabItem("View DB Items", id="view db items group", visible=True):
                 # This one works
                 create_view_all_with_versions_tab()
                 # This one is WIP
@@ -325,7 +324,7 @@ def launch_ui(share_public=None, server_mode=False):
                 create_prompt_view_tab()
 
 
-            with gr.TabItem("Prompts", id='view prompts group'):
+            with gr.TabItem("Prompts", id='view prompts group', visible=True):
                 create_prompt_view_tab()
                 create_prompt_search_tab()
                 create_prompt_edit_tab()
@@ -333,7 +332,7 @@ def launch_ui(share_public=None, server_mode=False):
                 create_prompt_suggestion_tab()
 
 
-            with gr.TabItem("Manage / Edit Existing Items", id="manage group"):
+            with gr.TabItem("Manage / Edit Existing Items", id="manage group", visible=True):
                 create_media_edit_tab()
                 create_manage_items_tab()
                 create_media_edit_and_clone_tab()
@@ -341,12 +340,12 @@ def launch_ui(share_public=None, server_mode=False):
                 #create_compare_transcripts_tab()
 
 
-            with gr.TabItem("Embeddings Management", id="embeddings group"):
+            with gr.TabItem("Embeddings Management", id="embeddings group", visible=True):
                 create_embeddings_tab()
                 create_view_embeddings_tab()
                 create_purge_embeddings_tab()
 
-            with gr.TabItem("Writing Tools", id="writing_tools group"):
+            with gr.TabItem("Writing Tools", id="writing_tools group", visible=True):
                 from App_Function_Libraries.Gradio_UI.Writing_tab import create_document_feedback_tab
                 create_document_feedback_tab()
                 from App_Function_Libraries.Gradio_UI.Writing_tab import create_grammar_style_check_tab
@@ -359,13 +358,13 @@ def launch_ui(share_public=None, server_mode=False):
                 create_mikupad_tab()
 
 
-            with gr.TabItem("Keywords", id="keywords group"):
+            with gr.TabItem("Keywords", id="keywords group", visible=True):
                 create_view_keywords_tab()
                 create_add_keyword_tab()
                 create_delete_keyword_tab()
                 create_export_keywords_tab()
 
-            with gr.TabItem("Import", id="import group"):
+            with gr.TabItem("Import", id="import group", visible=True):
                 create_import_item_tab()
                 create_import_obsidian_vault_tab()
                 create_import_single_prompt_tab()
@@ -373,37 +372,37 @@ def launch_ui(share_public=None, server_mode=False):
                 create_mediawiki_import_tab()
                 create_mediawiki_config_tab()
 
-            with gr.TabItem("Export", id="export group"):
+            with gr.TabItem("Export", id="export group", visible=True):
                 create_export_tab()
 
-            with gr.TabItem("Backup Management", id="backup group"):
+            with gr.TabItem("Backup Management", id="backup group", visible=True):
                 create_backup_tab()
                 create_view_backups_tab()
                 create_restore_backup_tab()
 
-            with gr.TabItem("Utilities", id="util group"):
+            with gr.TabItem("Utilities", id="util group", visible=True):
                 create_utilities_yt_video_tab()
                 create_utilities_yt_audio_tab()
                 create_utilities_yt_timestamp_tab()
 
-            with gr.TabItem("Local LLM", id="local llm group"):
+            with gr.TabItem("Local LLM", id="local llm group", visible=True):
                 create_chat_with_llamafile_tab()
                 create_ollama_tab()
                 #create_huggingface_tab()
 
-            with gr.TabItem("Trashcan", id="trashcan group"):
+            with gr.TabItem("Trashcan", id="trashcan group", visible=True):
                 create_search_and_mark_trash_tab()
                 create_view_trash_tab()
                 create_delete_trash_tab()
                 create_empty_trash_tab()
 
-            with gr.TabItem("Evaluations", id="eval"):
+            with gr.TabItem("Evaluations", id="eval", visible=True):
                 create_geval_tab()
                 create_infinite_bench_tab()
                 # FIXME
                 #create_mmlu_pro_tab()
 
-            with gr.TabItem("Introduction/Help", id="introduction group"):
+            with gr.TabItem("Introduction/Help", id="introduction group", visible=True):
                 create_introduction_tab()
 
             with gr.TabItem("Config Editor", id="config group"):

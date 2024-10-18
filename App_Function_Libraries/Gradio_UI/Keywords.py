@@ -19,7 +19,7 @@ from App_Function_Libraries.DB.DB_Manager import add_keyword, delete_keyword, ke
 
 
 def create_export_keywords_tab():
-    with gr.Tab("Export Keywords"):
+    with gr.TabItem("Export Keywords", visible=True):
         with gr.Row():
             with gr.Column():
                 export_keywords_button = gr.Button("Export Keywords")
@@ -33,7 +33,7 @@ def create_export_keywords_tab():
             )
 
 def create_view_keywords_tab():
-    with gr.TabItem("View Keywords"):
+    with gr.TabItem("View Keywords", visible=True):
         gr.Markdown("# Browse Keywords")
         with gr.Column():
             browse_output = gr.Markdown()
@@ -42,7 +42,7 @@ def create_view_keywords_tab():
 
 
 def create_add_keyword_tab():
-    with gr.TabItem("Add Keywords"):
+    with gr.TabItem("Add Keywords", visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown("# Add Keywords to the Database")
@@ -54,7 +54,7 @@ def create_add_keyword_tab():
 
 
 def create_delete_keyword_tab():
-    with gr.Tab("Delete Keywords"):
+    with gr.Tab("Delete Keywords", visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown("# Delete Keywords from the Database")

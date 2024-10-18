@@ -22,7 +22,7 @@ whisper_models = ["small", "medium", "small.en", "medium.en", "medium", "large",
                   "distil-large-v2", "distil-medium.en", "distil-small.en"]
 
 def create_live_recording_tab():
-    with gr.Tab("Live Recording and Transcription"):
+    with gr.Tab("Live Recording and Transcription", visible=True):
         gr.Markdown("# Live Audio Recording and Transcription")
         with gr.Row():
             with gr.Column():

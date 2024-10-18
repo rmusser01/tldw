@@ -229,7 +229,7 @@ def save_config(updated_config):
 
 
 def create_mediawiki_config_tab():
-    with gr.TabItem("MediaWiki Import Configuration"):
+    with gr.TabItem("MediaWiki Import Configuration", visible=True):
         gr.Markdown("# MediaWiki Import Configuration (Broken currently/doesn't work)")
         with gr.Row():
             with gr.Column():

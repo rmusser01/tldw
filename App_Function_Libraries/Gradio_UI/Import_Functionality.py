@@ -159,7 +159,7 @@ def parse_obsidian_note(file_path):
     }
 
 def create_import_single_prompt_tab():
-    with gr.TabItem("Import a Prompt"):
+    with gr.TabItem("Import a Prompt", visible=True):
         gr.Markdown("# Import a prompt into the database")
 
         with gr.Row():
@@ -213,7 +213,7 @@ def create_import_single_prompt_tab():
         )
 
 def create_import_item_tab():
-    with gr.TabItem("Import Markdown/Text Files"):
+    with gr.TabItem("Import Markdown/Text Files", visible=True):
         gr.Markdown("# Import a markdown file or text file into the database")
         gr.Markdown("...and have it tagged + summarized")
         with gr.Row():
@@ -246,7 +246,7 @@ def create_import_item_tab():
 
 
 def create_import_multiple_prompts_tab():
-    with gr.TabItem("Import Multiple Prompts"):
+    with gr.TabItem("Import Multiple Prompts", visible=True):
         gr.Markdown("# Import multiple prompts into the database")
         gr.Markdown("Upload a zip file containing multiple prompt files (txt or md)")
 
@@ -326,7 +326,7 @@ def create_import_multiple_prompts_tab():
 
 
 def create_import_obsidian_vault_tab():
-    with gr.TabItem("Import Obsidian Vault"):
+    with gr.TabItem("Import Obsidian Vault", visible=True):
         gr.Markdown("## Import Obsidian Vault")
         with gr.Row():
             with gr.Column():

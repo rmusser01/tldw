@@ -11,7 +11,7 @@
 ## All Automated. All Local. All Yours.
 </div>
 
-### [Public Demo on HuggingFace Spaces](https://huggingface.co/spaces/oceansweep/Vid-Summarizer/?__theme=dark)
+### [Public Demo on HuggingFace Spaces](https://huggingface.co/spaces/oceansweep/Vid-Summarizer/?__theme=dark) - Demo is broken due to a bug in Huggingface spaces/Gradio
 - **Please Note:** YouTube blocks requests from the demo. You have to provide a logged-in session cookie to bypass it :frowning_face: 
 - Placeholder content is included for the demo. HuggingFace API is also setup in it, so you can select that as your API.)
 

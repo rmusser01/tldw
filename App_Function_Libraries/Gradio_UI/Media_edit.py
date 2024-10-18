@@ -16,7 +16,7 @@ from App_Function_Libraries.DB.SQLite_DB import fetch_item_details
 
 
 def create_media_edit_tab():
-    with gr.TabItem("Edit Existing Items"):
+    with gr.TabItem("Edit Existing Items", visible=True):
         gr.Markdown("# Search and Edit Media Items")
 
         with gr.Row():
@@ -89,7 +89,7 @@ def create_media_edit_tab():
 
 
 def create_media_edit_and_clone_tab():
-    with gr.TabItem("Clone and Edit Existing Items"):
+    with gr.TabItem("Clone and Edit Existing Items", visible=True):
         gr.Markdown("# Search, Edit, and Clone Existing Items")
 
         with gr.Row():
@@ -199,7 +199,7 @@ def create_media_edit_and_clone_tab():
 
 
 def create_prompt_edit_tab():
-    with gr.TabItem("Add & Edit Prompts"):
+    with gr.TabItem("Add & Edit Prompts", visible=True):
         with gr.Row():
             with gr.Column():
                 prompt_dropdown = gr.Dropdown(
@@ -239,7 +239,7 @@ def create_prompt_edit_tab():
 
 
 def create_prompt_clone_tab():
-    with gr.TabItem("Clone and Edit Prompts"):
+    with gr.TabItem("Clone and Edit Prompts", visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown("# Clone and Edit Prompts")

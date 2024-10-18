@@ -23,7 +23,7 @@ from App_Function_Libraries.Utils.Utils import load_comprehensive_config
 # Functions:
 
 def create_resummary_tab():
-    with gr.TabItem("Re-Summarize"):
+    with gr.TabItem("Re-Summarize", visible=True):
         gr.Markdown("# Re-Summarize Existing Content")
         with gr.Row():
             with gr.Column():

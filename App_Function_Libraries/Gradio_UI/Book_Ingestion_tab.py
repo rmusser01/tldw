@@ -22,7 +22,7 @@ from App_Function_Libraries.Books.Book_Ingestion_Lib import process_zip_file, im
 
 
 def create_import_book_tab():
-    with gr.TabItem("Ebook(epub) Files"):
+    with gr.TabItem("Ebook(epub) Files", visible=True):
         with gr.Row():
             with gr.Column():
                 gr.Markdown("# Import .epub files")

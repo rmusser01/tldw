@@ -18,7 +18,7 @@ from App_Function_Libraries.Prompt_Engineering.Prompt_Engineering import generat
 
 # Gradio tab for prompt suggestion and testing
 def create_prompt_suggestion_tab():
-    with gr.TabItem("Prompt Suggestion/Creation"):
+    with gr.TabItem("Prompt Suggestion/Creation", visible=True):
         gr.Markdown("# Generate and Test AI Prompts with the Metaprompt Approach")
 
         with gr.Row():

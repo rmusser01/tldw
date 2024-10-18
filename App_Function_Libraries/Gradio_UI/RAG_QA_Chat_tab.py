@@ -25,7 +25,7 @@ from App_Function_Libraries.RAG.RAG_QA_Chat import load_chat_history, save_chat_
 # Functions:
 
 def create_rag_qa_chat_tab():
-    with gr.TabItem("RAG QA Chat"):
+    with gr.TabItem("RAG QA Chat", visible=True):
         gr.Markdown("# RAG QA Chat")
 
         with gr.Row():

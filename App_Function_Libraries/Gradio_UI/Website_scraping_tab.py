@@ -249,7 +249,7 @@ async def scrape_with_retry(url: str, max_retries: int = 3, retry_delay: float =
 
 
 def create_website_scraping_tab():
-    with gr.TabItem("Website Scraping"):
+    with gr.TabItem("Website Scraping", visible=True):
         gr.Markdown("# Scrape Websites & Summarize Articles")
         with gr.Row():
             with gr.Column():

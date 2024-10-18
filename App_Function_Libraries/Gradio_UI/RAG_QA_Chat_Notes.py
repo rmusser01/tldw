@@ -16,7 +16,7 @@ from App_Function_Libraries.RAG.RAG_QA_Chat import rag_qa_chat
 #
 # Functions
 def create_rag_qa_chat_notes_tab():
-    with gr.TabItem("RAG QA Chat"):
+    with gr.TabItem("RAG QA Chat", visible=True):
         gr.Markdown("# RAG QA Chat")
 
         state = gr.State({

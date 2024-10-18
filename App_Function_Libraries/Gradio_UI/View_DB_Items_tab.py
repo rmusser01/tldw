@@ -18,7 +18,7 @@ from App_Function_Libraries.DB.SQLite_DB import get_document_version
 # Functions
 
 def create_prompt_view_tab():
-    with gr.TabItem("View Prompt Database"):
+    with gr.TabItem("View Prompt Database", visible=True):
         gr.Markdown("# View Prompt Database Entries")
         with gr.Row():
             with gr.Column():
@@ -150,7 +150,7 @@ def extract_prompt_and_summary(content: str):
 
 
 def create_view_all_with_versions_tab():
-    with gr.TabItem("View All Items"):
+    with gr.TabItem("View All Items", visible=True):
         gr.Markdown("# View All Database Entries with Version Selection")
         with gr.Row():
             with gr.Column(scale=1):
@@ -281,7 +281,7 @@ def create_view_all_with_versions_tab():
 
 
 def create_viewing_tab():
-    with gr.TabItem("View Database Entries"):
+    with gr.TabItem("View Database Entries", visible=True):
         gr.Markdown("# View Database Entries")
         with gr.Row():
             with gr.Column():

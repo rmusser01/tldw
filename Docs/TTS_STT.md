@@ -1,8 +1,27 @@
 # Text-To-Speech / Speech-To-Text Documentation
 
 ## Overview
+Use of functions for individual services.
+Function for each service, streaming & non-streaming.
+Non-streaming will return a file, streaming will return a stream.
+Use of temporary files for storage.
+Use of pydub for audio manipulation.
+Use of pydub for audio merging.
 
 
+https://github.com/jiaaro/pydub
+
+Flow:
+1. Clean/format input text
+2. Split text into segments
+3. Generate audio for each segment using designated provider function
+4. Merge audio segments into single output file
+5. Clean up temporary files
+
+
+
+
+### Link Dump:
 
 https://github.com/cpumaxx/sovits-ff-plugin
 
@@ -29,7 +48,7 @@ https://github.com/Picovoice/speech-to-text-benchmark
 https://huggingface.co/papers/2410.02678
 
 https://github.com/livekit/agents
-
+https://github.com/pipecat-ai/pipecat/tree/a367a038f1a3967292b5de5b43b8600a82a73fb6?tab=readme-ov-file
 
 https://github.com/lamm-mit/PDF2Audio
 https://github.com/Purfview/whisper-standalone-win

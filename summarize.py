@@ -697,7 +697,7 @@ def main(input_path, api_name=None, api_key=None,
                     if media_path.lower().endswith(('.txt', '.md')):
                         if media_path.lower().endswith('.txt'):
                             # Handle text file ingestion
-                            result = ingest_text_file(media_path)
+                            result = ingest_text_file
                             logging.info(result)
                     elif media_path.lower().endswith(('.mp4', '.avi', '.mov')):
                         if diarize:

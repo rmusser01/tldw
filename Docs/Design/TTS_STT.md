@@ -1,10 +1,17 @@
 # Text-To-Speech / Speech-To-Text Documentation
 
-## Overview
+### Overview
 
 
+### Services
+- Google Cloud Text-to-Speech
+    - https://cloud.google.com/text-to-speech/docs/ssml
+  
+  
 Models
-    https://huggingface.co/NexaAIDev/Qwen2-Audio-7B-GGUF
+      https://huggingface.co/NexaAIDev/Qwen2-Audio-7B-GGUF
+
+https://github.com/albirrkarim/react-speech-highlight-demo
 
 
 GPT-SoviTTS
@@ -12,6 +19,12 @@ https://levelup.gitconnected.com/great-api-design-comprehensive-guide-from-basic
 https://rentry.org/GPT-SoVITS-guide
 https://github.com/RVC-Boss/GPT-SoVITS
 
+MaskGCT
+    https://maskgct.github.io/#emotion-samples
+    https://github.com/open-mmlab/Amphion/blob/main/models/tts/maskgct/README.md
+    https://github.com/open-mmlab/Amphion/blob/main/models/tts/maskgct/maskgct_demo.ipynb
+    https://github.com/open-mmlab/Amphion/blob/main/models/tts/maskgct/maskgct_inference.py
+    https://huggingface.co/amphion/MaskGCT
 
 TTS Pipeline
     https://www.astramind.ai/post/auralis

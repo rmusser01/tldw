@@ -14,6 +14,7 @@ Migrating to sqlite-vec
     https://docs.google.com/document/d/1sJ_S2ggfFmtPJupxIO3C1EZAFuDMUfNYcAytissbFMs/edit?tab=t.0#heading=h.xyau1jyb6vyx
     https://github.com/Mozilla-Ocho/llamafile/pull/644
 
+https://briandouglas.ie/sqlite-defaults/
 https://kerkour.com/sqlite-for-servers
 https://wafris.org/blog/rearchitecting-for-sqlite
     General DB:

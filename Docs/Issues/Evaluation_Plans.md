@@ -14,38 +14,50 @@
 ----------------------------------------------------------------------------------------------------------------
 
 
-https://x.com/bnjmn_marie/status/1846834917608407199
-https://www.juriopitz.com/2024/10/17/evaluation-pitfalls-metric-overview-tips.html
+
+Different results depending on batch size during evaluations - https://x.com/bnjmn_marie/status/1846834917608407199
+
 Benchmarking with distilabel
     https://distilabel.argilla.io/latest/sections/pipeline_samples/examples/benchmarking_with_distilabel/
 
 General Research
-    https://arxiv.org/abs/2407.10457
-    https://arxiv.org/abs/2410.01392
-    https://arxiv.org/pdf/2411.09213
-    https://arxiv.org/abs/2411.00640
-    https://ai.gopubby.com/5-ml-techniques-to-boost-your-model-accuracy-without-adding-more-data-94413189aaad?source=collection_home---4------9-----------------------
-    https://arxiv.org/abs/2411.10541
-    https://github.com/DanielWarfield1/MLWritingAndResearch/blob/main/AutoMix.ipynb
-
+    Greedy Sampling 
+        https://arxiv.org/abs/2407.10457
+            * `Our study addresses this issue by exploring key questions about the performance differences between greedy decoding and sampling, identifying benchmarks' consistency regarding non-determinism, and examining unique model behaviors. Through extensive experiments, we observe that greedy decoding generally outperforms sampling methods for most evaluated tasks. We also observe consistent performance across different LLM sizes and alignment methods, noting that alignment can reduce sampling variance. Moreover, our best-of-N sampling approach demonstrates that smaller LLMs can match or surpass larger models such as GPT-4-Turbo, highlighting the untapped potential of smaller LLMs. `
+    Stats
+        https://arxiv.org/pdf/2410.01392
+        https://arxiv.org/abs/2411.00640
+    
 Chat arena
-    https://github.com/lm-sys/FastChat
+    Building one
+        https://github.com/lm-sys/FastChat
+    Potential issues with creating a chatarena system
+        https://arxiv.org/abs/2412.04363
 LLM-as-judge
-    https://huggingface.co/spaces/AtlaAI/judge-arena
-    https://huggingface.co/learn/cookbook/en/llm_judge
-    https://github.com/open-compass/CompassJudger
-    https://hamel.dev/blog/posts/llm-judge
-    https://llm-as-a-judge.github.io/
-    https://github.com/llm-as-a-judge/Awesome-LLM-as-a-judge
-    https://deepmind.google/research/publications/85420/
-    https://arxiv.org/abs/2411.16646
+    Basics
+        https://huggingface.co/learn/cookbook/en/llm_judge
+    Evaluating LLMs as Judges
+        https://huggingface.co/papers/2306.05685
+        https://llm-as-a-judge.github.io/
+        https://arxiv.org/abs/2411.16646
+        Google SAFE
+            https://arxiv.org/abs/2403.18802
+            https://github.com/google-deepmind/long-form-factuality
+    Ranking of
+        https://huggingface.co/spaces/AtlaAI/judge-arena
+    Tools
+        https://github.com/open-compass/CompassJudger
 
 Quant Eval
-https://arxiv.org/abs/2411.02355
+    https://arxiv.org/abs/2411.02355
 
+Summarization
+    ClinicSum (Finetuning for Summarization)
+        https://arxiv.org/abs/2412.04254
 
 Creating Datasets
-    https://github.com/Kiln-AI/Kiln
+    
+    
     https://github.com/argilla-io/argilla
         https://www.youtube.com/watch?v=ZsCqrAhzkFU
         https://www.youtube.com/watch?v=jWrtgf2w4VU
@@ -67,6 +79,10 @@ Finetuning
 
 - **101**
     https://hamel.dev/blog/posts/evals/
+
+Links:
+    https://www.juriopitz.com/2024/10/17/evaluation-pitfalls-metric-overview-tips.html
+
     
 ----------------------------------------------------------------------------------------------------------------
 
@@ -168,6 +184,8 @@ Finetuning
         - https://github.com/FSoft-AI4Code/CodeMMLU
     - StackUnseen
         - https://prollm.toqan.ai/leaderboard/stack-unseen
+- **Cognitive Biases**
+    - CBEval: https://arxiv.org/abs/2412.03605
 - **Confabulation-Rate**
     - https://arxiv.org/abs/2409.11353
     - https://github.com/sylinrl/TruthfulQA
@@ -199,9 +217,12 @@ Finetuning
         - https://eqbench.com/creative_writing.html
 - **Culture**
     - https://arxiv.org/html/2305.14328v2
+    - https://arxiv.org/abs/2412.03304
+    - https://huggingface.co/datasets/CohereForAI/Global-MMLU
     - https://arxiv.org/abs/2411.06032
     - https://arxiv.org/abs/2410.02677
     - https://mbzuai-oryx.github.io/ALM-Bench/
+    - https://arxiv.org/abs/2411.19799
     - User-Centric Evaluation of LLMs
         - https://github.com/Alice1998/URS
     - https://huggingface.co/spaces/HuggingFaceFW/blogpost-fine-tasks
@@ -212,6 +233,10 @@ Finetuning
 - **Math Eval**
     - https://arxiv.org/abs/2411.04872
     - GSM8K
+- **Prompt Formatting**
+    - How do LLMs handle different formats:
+        - https://arxiv.org/abs/2411.10541
+            - `Our study reveals that the way prompts are formatted significantly impacts GPT-based models’ performance, with no single format excelling universally. This finding questions current evaluation methods that often ignore prompt structure, potentially misjudging a model’s true abilities. We advocate for diverse prompt formats in future LLM testing to accurately gauge and enhance their performance.`
 - **Positional Bias**
     - https://arxiv.org/abs/2410.14641
     - https://github.com/Rachum-thu/LongPiBench
@@ -424,8 +449,16 @@ https://github.com/jonathan-roberts1/needle-threading/
 https://huggingface.co/datasets/jonathan-roberts1/needle-threading
 https://arxiv.org/abs/2411.03538
 https://arxiv.org/abs/2411.19710
-
+https://aws.amazon.com/blogs/aws/new-rag-evaluation-and-llm-as-a-judge-capabilities-in-amazon-bedrock/
 https://archive.is/MZsB9
+https://arxiv.org/abs/2411.00136
+https://github.com/opendatalab/OHR-Bench
+https://towardsdatascience.com/from-retrieval-to-intelligence-exploring-rag-agent-rag-and-evaluation-with-trulens-3c518af836ce
+https://arxiv.org/pdf/2411.09213
+https://huggingface.co/learn/cookbook/en/rag_evaluation
+
+
+
 - **101**
 - **RAG Eval Plan:**
     - The generic idea however: you take a (full, unchunked) document and ask an LLM to generate a question with that document as well as give the factual answer to it. Enforce via prompts to make it use the document only and make it as hard as you want (eg. maybe sometimes you want it to consider 2 documents and make a question that uses bits of both). This gives you a ground truth dataset.

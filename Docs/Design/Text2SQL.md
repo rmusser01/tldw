@@ -17,3 +17,4 @@ https://ai.gopubby.com/advanced-rag-retrieval-strategy-embedded-tables-fdb3e4400
 https://medium.com/intel-tech/tabular-data-rag-llms-improve-results-through-data-table-prompting-bcb42678914b
 https://github.com/TAG-Research/TAG-Bench
 https://arxiv.org/pdf/2407.14482
+https://spider2-sql.github.io/

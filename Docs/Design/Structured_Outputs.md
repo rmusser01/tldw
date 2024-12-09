@@ -23,4 +23,5 @@ https://python.plainenglish.io/generating-perfectly-structured-json-using-llms-a
 https://docs.pydantic.dev/latest/
 https://github.com/outlines-dev/outlines[
 https://github.com/Dan-wanna-M/formatron/tree/master
+https://blog.dottxt.co/selective-multiplication.html
 

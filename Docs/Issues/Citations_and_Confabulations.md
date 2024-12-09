@@ -5,6 +5,10 @@
 2. [Confabulations](#confabulations)
 3. [References](#references)
 
+
+
+https://arxiv.org/abs/2412.04235
+
 RAG
   https://www.lycee.ai/blog/rag-ragallucinations-and-how-to-fight-them
 

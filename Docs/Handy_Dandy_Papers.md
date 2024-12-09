@@ -4,11 +4,26 @@
 https://arxiv.org/pdf/2410.13098
 https://arxiv.org/pdf/2404.01413
 https://arxiv.org/abs/2411.11910
-
+https://arxiv.org/abs/2411.00136
+https://jinyangwu.github.io/hiar-icl/
+https://www.aimodels.fyi/papers/arxiv/beyond-examples-high-level-automated-reasoning-paradigm
+https://arxiv.org/abs/2412.02674
+https://arxiv.org/abs/2411.19865
+https://arxiv.org/abs/2412.04315
+https://arxiv.org/abs/2412.02980
+https://arxiv.org/abs/2412.02906
+https://arxiv.org/pdf/2410.21272
+https://arxiv.org/abs/2412.04318
+https://arxiv.org/abs/2412.02142
 
 ### Context
     https://arxiv.org/pdf/2304.12102
     https://arxiv.org/html/2405.20234v2#S3
+
+### Dataset Generation
+    https://arxiv.org/abs/2412.04645
+
+
 
 ### Reasoning
 - https://huggingface.co/papers/2411.15862

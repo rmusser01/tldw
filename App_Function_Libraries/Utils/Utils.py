@@ -219,7 +219,11 @@ def load_and_log_configs():
 
         google_api_key = config.get('API', 'google_api_key', fallback=None)
         logging.debug(
-            f"Loaded Mistral API Key: {google_api_key[:5]}...{google_api_key[-5:] if google_api_key else None}")
+            f"Loaded Google API Key: {google_api_key[:5]}...{google_api_key[-5:] if google_api_key else None}")
+
+        elevenlabs_api_key = config.get('API', 'elevenlabs_api_key', fallback=None)
+        logging.debug(
+            f"Loaded elevenlabs API Key: {elevenlabs_api_key[:5]}...{elevenlabs_api_key[-5:] if elevenlabs_api_key else None}")
 
         # Models
         anthropic_model = config.get('API', 'anthropic_model', fallback='claude-3-sonnet-20240229')
@@ -311,6 +315,30 @@ def load_and_log_configs():
         # Local API Timeout
         local_api_timeout = config.get('Local-API', 'local_api_timeout', fallback='90')
 
+        # TTS Settings
+        # FIXME
+        tts_provider = config.get('TTS-Settings', 'default_tts_provider', fallback='openai')
+        tts_voice = config.get('TTS-Settings', 'default_tts_voice', fallback='shimmer')
+        # Open AI TTS
+        default_openai_tts_model = config.get('TTS-Settings', 'default_openai_tts_model', fallback='tts-1-hd')
+        default_openai_tts_voice = config.get('TTS-Settings', 'default_openai_tts_voice', fallback='shimmer')
+        default_openai_tts_speed = config.get('TTS-Settings', 'default_openai_tts_speed', fallback='1')
+        # Google TTS
+        # FIXME - FIX THESE DEFAULTS
+        default_google_tts_model = config.get('TTS-Settings', 'default_google_tts_model', fallback='en')
+        default_google_tts_voice = config.get('TTS-Settings', 'default_google_tts_voice', fallback='en')
+        default_google_tts_speed = config.get('TTS-Settings', 'default_google_tts_speed', fallback='1')
+        # ElevenLabs TTS
+        default_eleven_tts_model = config.get('TTS-Settings', 'default_eleven_tts_model', fallback='FIXME')
+        default_eleven_tts_voice = config.get('TTS-Settings', 'default_eleven_tts_voice', fallback='FIXME')
+        default_eleven_tts_language_code = config.get('TTS-Settings', 'default_eleven_tts_language_code', fallback='FIXME')
+        default_eleven_tts_voice_stability = config.get('TTS-Settings', 'default_eleven_tts_voice_stability', fallback='FIXME')
+        default_eleven_tts_voice_similiarity_boost = config.get('TTS-Settings', 'default_eleven_tts_voice_similiarity_boost', fallback='FIXME')
+        default_eleven_tts_voice_style = config.get('TTS-Settings', 'default_eleven_tts_voice_style', fallback='FIXME')
+        default_eleven_tts_voice_use_speaker_boost = config.get('TTS-Settings', 'default_eleven_tts_voice_use_speaker_boost', fallback='FIXME')
+        default_eleven_tts_output_format = config.get('TTS-Settings', 'default_eleven_tts_output_format',
+                                                      fallback='mp3_44100_192')
+
         return {
             'api_keys': {
                 'anthropic': anthropic_api_key,
@@ -329,6 +357,7 @@ def load_and_log_configs():
                 'vllm': vllm_api_key,
                 'ollama': ollama_api_key,
                 'aphrodite': aphrodite_api_key,
+                'elevenlabs': elevenlabs_api_key,
                 'custom_openai_api_key': custom_openai_api_key
             },
             'models': {
@@ -382,14 +411,39 @@ def load_and_log_configs():
                 'save_rag_chats': save_rag_chats,
             },
             'default_api': default_api,
-            'local_api_timeout': local_api_timeout
+            'local_api_timeout': local_api_timeout,
+            'tts_settings': {
+                'tts_provider': tts_provider,
+                'tts_voice': tts_voice,
+                # OpenAI
+                'default_openai_tts_voice': default_openai_tts_voice,
+                'default_openai_tts_speed': default_openai_tts_speed,
+                'default_openai_tts_model': default_openai_tts_model,
+                # Google
+                'default_google_tts_model': default_google_tts_model,
+                'default_google_tts_voice': default_google_tts_voice,
+                'default_google_tts_speed': default_google_tts_speed,
+                # ElevenLabs
+                'default_eleven_tts_model': default_eleven_tts_model,
+                'default_eleven_tts_voice': default_eleven_tts_voice,
+                'default_eleven_tts_language_code': default_eleven_tts_language_code,
+                'default_eleven_tts_voice_stability': default_eleven_tts_voice_stability,
+                'default_eleven_tts_voice_similiarity_boost': default_eleven_tts_voice_similiarity_boost,
+                'default_eleven_tts_voice_style': default_eleven_tts_voice_style,
+                'default_eleven_tts_voice_use_speaker_boost': default_eleven_tts_voice_use_speaker_boost,
+                'default_eleven_tts_output_format': default_eleven_tts_output_format
+                # GPT Sovi-TTS
+            }
         }
 
     except Exception as e:
         logging.error(f"Error loading config: {str(e)}")
         return None
 
+
 global_api_endpoints = ["anthropic", "cohere", "groq", "openai", "huggingface", "openrouter", "deepseek", "mistral", "google", "custom_openai_api", "llama", "ooba", "kobold", "tabby", "vllm", "ollama", "aphrodite"]
+
+openai_tts_voices = ["alloy", "echo", "fable", "onyx", "nova", "shimmer"]
 
 # Setup Default API Endpoint
 loaded_config_data = load_and_log_configs()
@@ -416,9 +470,9 @@ def format_api_name(api):
         "aphrodite": "Aphrodite"
     }
     return name_mapping.get(api, api.title())
+
+
 print(f"Default API Endpoint: {default_api_endpoint}")
-
-
 
 #
 # End of Config loading
@@ -596,9 +650,6 @@ def create_download_directory(title):
     return session_path
 
 
-import chardet
-import logging
-
 def safe_read_file(file_path):
     encodings = ['utf-8', 'utf-16', 'ascii', 'latin-1', 'iso-8859-1', 'cp1252', 'utf-8-sig']
 
@@ -725,7 +776,6 @@ def normalize_title(title, preserve_spaces=False):
     return title.strip('_')
 
 
-
 def clean_youtube_url(url):
     parsed_url = urlparse(url)
     query_params = parse_qs(parsed_url.query)
@@ -820,9 +870,6 @@ def get_db_config():
         'elasticsearch_port': config.getint('Database', 'elasticsearch_port', fallback=9200)
     }
 
-
-
-
 #
 # End of DB Config Loading
 #######################################################################################################################
@@ -838,6 +885,7 @@ def format_text_with_line_breaks(text):
 
 # Track temp files for cleanup
 temp_files = []
+
 temp_file_paths = []
 
 def save_temp_file(file):

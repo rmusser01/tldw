@@ -122,3 +122,46 @@ Jailbreaks
     https://arxiv.org/pdf/2409.11445
 
 
+
+
+
+
+
+### Model Routing
+https://github.com/pepijndevos/llama_multiserver/tree/main
+
+
+I trained one router LoRA capable of routing into a list of LoRAs I had previously trained on my domain data. One of the LoRAs I used was created by another user on Hugging Face but performed exceptionally well for my use case.
+
+Given a question, the classifier LoRA first classifies the question into one of my domains. Then another LoRA, based on the domain classification and the list of available LoRA models (fetched from my database), selects the most appropriate one for the answer. The message, along with any relevant context, is then sent to the selected LoRA. The final answers are aggregated and presented to the user.
+
+I have implemented multiple approaches. In one, the domain selector and router LoRA were trained and integrated into a single unitary adapter instead of relying on a two-step process.
+
+Additionally, in another experiment, I used a COT LoRA. For each step, the classifier identified the domain and selected the adapter to solve each of the given steps independetly. The process involved generating content from each of the "agents," aggregating the content and feeding it to the next step, aggregating the final answer, and presenting it to the user.
+
+I usually trained these adapters with 500–5000 samples. Most samples were generated using GPT-4o with few-shot prompts and domain-specific information to build the synthetic dataset. In my case this approach was effective in producing a tailored synthetic dataset.
+
+Weak-Abbreviations15
+You definitely can.
+My approach is this:
+
+    High Context length 2048-4096
+
+    I get my team to produce some (50 max) high quality Chains on the domains we work on.
+
+    Use GPT to expand and optimize these chains. The output is the OptimalChain.
+
+    Use the OptimalChains and FewShot to generate the remaining chains in the domains we need, based on the given structure.
+
+    Structurizing chains in json Like format does seem to help but i dont have any proof of this claim.
+
+    Experiment with Lora + Unsloth tuning with different parameters. You can use LLamafactory to do this.
+
+    This seemed to be enough for most use cases. Im experimenting now with adding a RLHF/OPRO post finetuning, but i've yet to try it. (Ive built the dataset by synthetically messing up the answers to create the prefered and non prefered answer for the process. )
+
+EDIT: 8. Anecdotal advice: unquantized Lora finetuning seems to train faster, and loss also converges faster. Thus is my preferred approach.
+
+Ive had my fair share of experience in finetuning. My MSc Thesis was based on adding new copied layers to a LLM, and then finetune the layers specifically with a new language dataset which the LLM knew very little about, and essentially aggressively train those new layers without changing any of the other LLM structures, the result was that the LLM gained new linguistical abilities without downgrading its base skills in english. So i believe that for most usecases finetuning is good enough.
+
+
+In my paper i used instruct models. Later i discovered that non instruction tuned models seem to perform much better for finetuning. They converge easier and in my experience seem less prone to forgetting. I used QLora but only bcs the models i used were bigger than my VRAM. I also wasnt aware of the faster training in Lora vs Qlora. Sort of my insights were developed once i was deep in the paper. I started the paper with llama 7b and ended up using the llama 3.1 8b until i finalized the project. Using LlamaPro i added a number of layers whoch increased its size to smthing between 9.5-10.2 billion parameters i cant recall exactly, which made it larger than what fit my GPU. I used fairly large r and alpha for lora on the fiest pass, and then lowered them as the tuning progressed. I wanted to use a very large dataset, but ended up using a much smaller one due to time and compute constraints. Everything was done locally hence i had to fidget around and over optimize. Probably with more compute itd be better managed. The result was pretty good considering the base model produced only jibberish. Some issues when speaking some very peculiar features of my native language. I used Bleu4 and a couple of the rouge metrics to rest the quality of the outputs. Differences in performance was tested for signficance.

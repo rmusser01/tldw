@@ -20,7 +20,7 @@ from App_Function_Libraries.Utils.Utils import default_api_endpoint, global_api_
 # Functions:
 
 # Load workflows from a JSON file
-json_path = Path('./Helper_Scripts/Workflows/Workflows.json')
+json_path = Path('./App_Function_Libraries/Workflows/Workflows.json')
 with json_path.open('r') as f:
     workflows = json.load(f)
 

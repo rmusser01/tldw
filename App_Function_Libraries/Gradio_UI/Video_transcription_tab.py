@@ -956,6 +956,8 @@ def create_video_transcription_tab():
             def toggle_confabulation_output(checkbox_value):
                 return gr.update(visible=checkbox_value)
 
+
+
             confab_checkbox.change(
                 fn=toggle_confabulation_output,
                 inputs=[confab_checkbox],

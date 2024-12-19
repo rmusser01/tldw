@@ -403,6 +403,10 @@ def launch_ui(share_public=None, server_mode=False):
         padding: 10px;
         margin-top: 10px;
     }
+    .scrollable-textbox textarea {
+    height: 600px !important;
+    overflow-y: auto !important;
+    }
     """
 
     config = load_and_log_configs()

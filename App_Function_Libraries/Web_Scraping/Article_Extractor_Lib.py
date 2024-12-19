@@ -33,6 +33,8 @@ import pandas as pd
 from playwright.async_api import async_playwright
 import requests
 import trafilatura
+from tqdm import tqdm
+
 #
 # Import Local
 from App_Function_Libraries.DB.DB_Manager import ingest_article_to_db
@@ -41,6 +43,8 @@ from App_Function_Libraries.Summarization.Summarization_General_Lib import summa
 #######################################################################################################################
 # Function Definitions
 #
+
+web_scraping_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 
 #################################################################
 #
@@ -65,18 +69,26 @@ async def scrape_article(url: str, custom_cookies: Optional[List[Dict[str, Any]]
     async def fetch_html(url: str) -> str:
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
-            context = await browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-            )
-            if custom_cookies:
-                await context.add_cookies(custom_cookies)
-            page = await context.new_page()
-            await page.goto(url)
-            await page.wait_for_load_state("networkidle")
-            content = await page.content()
-            await browser.close()
-            log_counter("html_fetched", labels={"url": url})
-            return content
+            try:
+                context = await browser.new_context(
+                    user_agent=web_scraping_user_agent,
+                #viewport = {"width": 1280, "height": 720},
+                #java_script_enabled = True
+                )
+                if custom_cookies:
+                    await context.add_cookies(custom_cookies)
+                page = await context.new_page()
+                try:
+                    await page.goto(url, wait_until="domcontentloaded")
+                    await page.wait_for_load_state("networkidle", timeout=30000)
+                    content = await page.content()
+                    log_counter("html_fetched", labels={"url": url})
+                    return content
+                except Exception as e:
+                    logging.error(f"Error fetching HTML for {url}: {e}")
+                    return ""
+            finally:
+                await browser.close()
 
     def extract_article_data(html: str, url: str) -> dict:
         # FIXME - Add option for extracting comments/tables/images
@@ -136,7 +148,6 @@ async def scrape_article(url: str, custom_cookies: Optional[List[Dict[str, Any]]
         log_histogram("article_content_length", len(article_data['content']), labels={"url": url})
     return article_data
 
-
 # FIXME - Add keyword integration/tagging
 async def scrape_and_summarize_multiple(
     urls: str,
@@ -155,6 +166,9 @@ async def scrape_and_summarize_multiple(
 
     results = []
     errors = []
+
+    # Create a tqdm progress bar
+    progress_bar = tqdm(total=len(urls_list), desc="Scraping and Summarizing")
 
     # Loop over each URL to scrape and optionally summarize
     for i, url in enumerate(urls_list):
@@ -206,6 +220,12 @@ async def scrape_and_summarize_multiple(
             error_message = f"Error processing URL {i + 1} ({url}): {str(e)}"
             errors.append(error_message)
             logging.error(error_message, exc_info=True)
+        finally:
+            # Update the progress bar
+            progress_bar.update(1)
+
+    # Close the progress bar
+    progress_bar.close()
 
     if errors:
         logging.error("\n".join(errors))
@@ -804,10 +824,10 @@ class ContentMetadataHandler:
             metadata.update(additional_metadata)
 
         formatted_content = f"""{ContentMetadataHandler.METADATA_START}
-{json.dumps(metadata, indent=2)}
-{ContentMetadataHandler.METADATA_END}
-
-{content}"""
+        {json.dumps(metadata, indent=2)}
+        {ContentMetadataHandler.METADATA_END}
+        
+        {content}"""
 
         return formatted_content
 

@@ -5,7 +5,7 @@
 ### Bitnet
 - Unsorted
   - https://arxiv.org/abs/2411.11843
-
+  https://github.com/KYuuto1006/DQT
 
 
 ### Mamba

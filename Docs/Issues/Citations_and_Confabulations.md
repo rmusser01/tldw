@@ -5,6 +5,14 @@
 2. [Confabulations](#confabulations)
 3. [References](#references)
 
+
+
+https://arxiv.org/abs/2412.04235
+https://arxiv.org/abs/2412.11536
+https://github.com/sunnynexus/RetroLLM
+https://huggingface.co/PleIAs/Pleias-Nano
+https://deepmind.google/discover/blog/facts-grounding-a-new-benchmark-for-evaluating-the-factuality-of-large-language-models/
+
 RAG
   https://www.lycee.ai/blog/rag-ragallucinations-and-how-to-fight-them
 

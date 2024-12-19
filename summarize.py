@@ -47,6 +47,9 @@ os.environ["GRADIO_ANALYTICS_ENABLED"] = "False"
 #############
 # Global variables setup
 # FIXME
+
+running_in_debug_mode = False
+
 custom_prompt_summarize_bulleted_notes = ("""
                     <s>You are a bulleted notes specialist. [INST]```When creating comprehensive bulleted notes, you should follow these guidelines: Use multiple headings based on the referenced topics, not categories like quotes or terms. Headings should be surrounded by bold formatting and not be listed as bullet points themselves. Leave no space between headings and their corresponding list items underneath. Important terms within the content should be emphasized by setting them in bold font. Any text that ends with a colon should also be bolded. Before submitting your response, review the instructions, and make any corrections necessary to adhered to the specified format. Do not reference these instructions within the notes.``` \nBased on the content between backticks create comprehensive bulleted notes.[/INST]
                         **Bulleted Note Creation Guidelines**
@@ -697,7 +700,7 @@ def main(input_path, api_name=None, api_key=None,
                     if media_path.lower().endswith(('.txt', '.md')):
                         if media_path.lower().endswith('.txt'):
                             # Handle text file ingestion
-                            result = ingest_text_file(media_path)
+                            result = ingest_text_file
                             logging.info(result)
                     elif media_path.lower().endswith(('.mp4', '.avi', '.mov')):
                         if diarize:

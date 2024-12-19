@@ -408,7 +408,12 @@ def create_website_scraping_tab():
 
             with gr.Column():
                 progress_output = gr.Textbox(label="Progress", lines=3)
-                result_output = gr.Textbox(label="Result", lines=20)
+                result_output = gr.Textbox(
+                    label="Web Scraping Results",
+                    lines=20,
+                    elem_classes="scrollable-textbox",
+                    show_copy_button=True
+                )
 
         def update_ui_for_scrape_method(method):
             url_level_update = gr.update(visible=(method == "URL Level"))

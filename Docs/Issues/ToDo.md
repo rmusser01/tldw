@@ -37,3 +37,6 @@ List of stuff I don't feel like filing an issue for (yet).
         https://ai.gopubby.com/demystifying-pdf-parsing-04-ocr-free-large-multimodal-model-based-method-0fdab50db048
         https://pub.towardsai.net/demystifying-pdf-parsing-05-unifying-separate-tasks-into-a-small-model-d3739db021f7
         https://ai.gopubby.com/demystifying-pdf-parsing-06-representative-industry-solutions-5d4a1cfe311b
+
+- Prompts
+  - https://github.com/ProfSynapse/Synapse_CoR

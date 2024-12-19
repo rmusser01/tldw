@@ -7,6 +7,11 @@
 - [Interesting/Relevant Later](#interesting-relevant-later)
 
 
+
+SQLite
+    https://highperformancesqlite.com/watch/dot-commands
+    https://www.youtube.com/watch?v=XP-h304N06I
+
 Migrating to sqlite-vec
     https://www.youtube.com/live/xmdiwdom6Vk?t=1740s
     https://alexgarcia.xyz/blog/2024/sqlite-vec-metadata-release/index.html
@@ -14,6 +19,8 @@ Migrating to sqlite-vec
     https://docs.google.com/document/d/1sJ_S2ggfFmtPJupxIO3C1EZAFuDMUfNYcAytissbFMs/edit?tab=t.0#heading=h.xyau1jyb6vyx
     https://github.com/Mozilla-Ocho/llamafile/pull/644
 
+https://briandouglas.ie/sqlite-defaults/
+https://phiresky.github.io/blog/2020/sqlite-performance-tuning/
 https://kerkour.com/sqlite-for-servers
 https://wafris.org/blog/rearchitecting-for-sqlite
     General DB:

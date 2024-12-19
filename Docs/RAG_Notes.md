@@ -16,6 +16,27 @@ Unsorted
 	https://www.louisbouchard.ai/indexing-methods/
 	https://github.com/circlemind-ai/fast-graphrag
 	https://github.com/Kain-90/RAG-Play
+	https://arxiv.org/abs/2412.03736
+	https://arxiv.org/abs/2403.10131
+	https://arxiv.org/abs/2412.01572
+	https://pub.towardsai.net/around-the-rag-in-80-questions-part-ii-4df03c6dba86
+	https://www.uber.com/en-IN/blog/introducing-the-prompt-engineering-toolkit/
+	https://arxiv.org/abs/2409.14924
+https://arxiv.org/abs/2412.02830
+https://arxiv.org/abs/2407.04125
+https://cobusgreyling.medium.com/four-levels-of-rag-research-from-microsoft-fdc54388f0ff
+https://arxiv.org/html/2412.00239v1
+https://arxiv.org/abs/2412.02830
+https://arxiv.org/html/2412.02035v1
+https://towardsdatascience.com/dragin-dynamic-retrieval-augmented-generation-based-on-the-information-needs-of-large-language-dbdb9aabc1ef
+https://towardsdatascience.com/improve-your-rag-context-recall-by-40-with-an-adapted-embedding-model-5d4a8f583f32
+
+
+
+
+
+
+
 
 GraphRAG
 	https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/	
@@ -26,6 +47,20 @@ GraphRAG
 	https://towardsdatascience.com/building-a-knowledge-graph-from-scratch-using-llms-f6f677a17f07
 	https://iopscience.iop.org/article/10.1088/2632-2153/ad7228/pdf
 	https://medium.com/thoughts-on-machine-learning/building-dynamic-knowledge-graphs-using-open-source-llms-06a870e1bc4f
+	https://ai.plainenglish.io/modeling-ai-semantic-memory-with-knowledge-graphs-1ce06f683433
+	https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a
+	https://towardsdatascience.com/building-knowledge-graphs-with-llm-graph-transformer-a91045c49b59
+	https://arxiv.org/abs/2412.03589
+	https://arxiv.org/abs/2412.03736
+	https://arxiv.org/abs/2412.04119
+	https://aibyhand.substack.com/p/beginners-guide-to-graph-rag
+	https://github.com/gusye1234/nano-graphrag
+	https://arxiv.org/abs/2412.03589
+	https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375
+	https://towardsdatascience.com/towards-named-entity-disambiguation-with-graph-embeddings-ef164aaad37c
+
+
+
 
 ### Links
 - RAG 101

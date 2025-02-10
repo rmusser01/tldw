@@ -38,7 +38,8 @@ https://github.com/plurch/ir_evaluation
 https://github.com/OpenBMB/UltraEval-Audio
 https://alibaba-nlp.github.io/WebWalker/
 https://arxiv.org/abs/2501.03491
-https://machinelearningmastery.com/rag-hallucination-detection-techniques/
+https://machinelearningmastery.com/rag-hallucination-detection-techniques
+https://arxiv.org/abs/2501.09775/
 https://huggingface.co/papers/2412.06745
 https://huggingface.co/dranger003/c4ai-command-r-v01-iMat.GGUF
 https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO

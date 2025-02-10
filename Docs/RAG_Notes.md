@@ -93,6 +93,7 @@ GraphRAG
 	https://arxiv.org/abs/2412.03589
 	https://arxiv.org/abs/2412.03736
 	https://arxiv.org/abs/2412.04119
+https://medium.com/@dickson.lukose/ontology-reasoning-imperative-for-intelligent-graphrag-part-1-2-0018265b987c
 	https://aibyhand.substack.com/p/beginners-guide-to-graph-rag
 	https://github.com/gusye1234/nano-graphrag
 	https://arxiv.org/abs/2412.03589

@@ -21,6 +21,7 @@ https://huggingface.co/allenai/Molmo-7B-D-0924
 https://github.com/deepseek-ai/DeepSeek-VL2
 https://huggingface.co/Qwen/QVQ-72B-Preview
 https://huggingface.co/Qwen/Qwen2-VL-72B
+https://github.com/EmbodiedBench/EmbodiedBench
 https://huggingface.co/Qwen/Qwen2-VL-7B
 https://huggingface.co/OpenGVLab/InternVideo2_5_Chat_8B
 https://huggingface.co/Qwen/Qwen2-VL-2B
@@ -37,6 +38,7 @@ https://arxiv.org/abs/2412.05185
 https://huggingface.co/vidore/colqwen2-v0.1
 https://huggingface.co/collections/nvidia/eagle-2-6764ba887fa1ef387f7df067
 https://github.com/baichuan-inc/Baichuan-Omni-1.5
+https://huggingface.co/ibm-granite/granite-vision-3.1-2b-preview
 https://github.com/bytedance/UI-TARS
 https://github.com/ggerganov/llama.cpp/pull/11289
 https://mmvu-benchmark.github.io/

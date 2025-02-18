@@ -19,7 +19,7 @@
 
 ### Link Dump:
 https://gleen.ai/blog/agentic-chunking-enhancing-rag-answers-for-completeness-and-accuracy/
-
+https://github.com/carlosplanchon/betterhtmlchunking
 
 
 

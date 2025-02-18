@@ -68,7 +68,7 @@ https://trends.uxdesign.cc/
 https://bolters.io/
 https://github.com/abhishekkrthakur/aiaio
 https://www.phind.com/blog/phind-2-model-creation
-
+https://www.iamtamara.design/blog/designing-for-deaf-users
 https://github.com/Cloud-Code-AI/AkiraDocs
 https://ui.shadcn.com/docs
 https://www.typingmind.com/

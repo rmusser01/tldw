@@ -12,6 +12,8 @@ https://arxiv.org/pdf/2501.07572v2
 https://arxiv.org/pdf/2412.17149
 	https://arxiv.org/abs/2410.21012
 https://arxiv.org/abs/2410.03608
+https://huggingface.co/papers/2502.09411
+
 https://research.google/blog/chain-of-agents-large-language-models-collaborating-on-long-context-tasks/
 https://arxiv.org/abs/2501.15228
 	https://arxiv.org/abs/2410.20088

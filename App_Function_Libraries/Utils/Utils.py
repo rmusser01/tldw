@@ -477,13 +477,98 @@ def load_and_log_configs():
         processing_choice = config.get('Processing', 'processing_choice', fallback='cpu')
         logging.trace(f"Processing choice set to: {processing_choice}")
 
-        # Retrieve Chunking settings from the configuration file
+        # [Chunking]
+        # # Chunking Defaults
+        # #
+        # # Default Chunking Options for each media type
         chunking_method = config.get('Chunking', 'chunking_method', fallback='words')
         chunk_max_size = config.get('Chunking', 'chunk_max_size', fallback='400')
         chunk_overlap = config.get('Chunking', 'chunk_overlap', fallback='200')
         adaptive_chunking = config.get('Chunking', 'adaptive_chunking', fallback='False')
         chunking_multi_level = config.get('Chunking', 'chunking_multi_level', fallback='False')
         chunk_language = config.get('Chunking', 'chunk_language', fallback='en')
+        #
+        # Article Chunking
+        article_chunking_method = config.get('Chunking', 'article_chunking_method', fallback='words')
+        article_chunk_max_size = config.get('Chunking', 'article_chunk_max_size', fallback='400')
+        article_chunk_overlap = config.get('Chunking', 'article_chunk_overlap', fallback='200')
+        article_adaptive_chunking = config.get('Chunking', 'article_adaptive_chunking', fallback='False')
+        article_chunking_multi_level = config.get('Chunking', 'article_chunking_multi_level', fallback='False')
+        article_language = config.get('Chunking', 'article_language', fallback='english')
+        #
+        # Audio file Chunking
+        audio_chunking_method = config.get('Chunking', 'audio_chunking_method', fallback='words')
+        audio_chunk_max_size = config.get('Chunking', 'audio_chunk_max_size', fallback='400')
+        audio_chunk_overlap = config.get('Chunking', 'audio_chunk_overlap', fallback='200')
+        audio_adaptive_chunking = config.get('Chunking', 'audio_adaptive_chunking', fallback='False')
+        audio_chunking_multi_level = config.get('Chunking', 'audio_chunking_multi_level', fallback='False')
+        audio_language = config.get('Chunking', 'audio_language', fallback='english')
+        #
+        # Book Chunking
+        book_chunking_method = config.get('Chunking', 'book_chunking_method', fallback='words')
+        book_chunk_max_size = config.get('Chunking', 'book_chunk_max_size', fallback='400')
+        book_chunk_overlap = config.get('Chunking', 'book_chunk_overlap', fallback='200')
+        book_adaptive_chunking = config.get('Chunking', 'book_adaptive_chunking', fallback='False')
+        book_chunking_multi_level = config.get('Chunking', 'book_chunking_multi_level', fallback='False')
+        book_language = config.get('Chunking', 'book_language', fallback='english')
+        #
+        # Document Chunking
+        document_chunking_method = config.get('Chunking', 'document_chunking_method', fallback='words')
+        document_chunk_max_size = config.get('Chunking', 'document_chunk_max_size', fallback='400')
+        document_chunk_overlap = config.get('Chunking', 'document_chunk_overlap', fallback='200')
+        document_adaptive_chunking = config.get('Chunking', 'document_adaptive_chunking', fallback='False')
+        document_chunking_multi_level = config.get('Chunking', 'document_chunking_multi_level', fallback='False')
+        document_language = config.get('Chunking', 'document_language', fallback='english')
+        #
+        # Mediawiki Article Chunking
+        mediawiki_article_chunking_method = config.get('Chunking', 'mediawiki_article_chunking_method', fallback='words')
+        mediawiki_article_chunk_max_size = config.get('Chunking', 'mediawiki_article_chunk_max_size', fallback='400')
+        mediawiki_article_chunk_overlap = config.get('Chunking', 'mediawiki_article_chunk_overlap', fallback='200')
+        mediawiki_article_adaptive_chunking = config.get('Chunking', 'mediawiki_article_adaptive_chunking', fallback='False')
+        mediawiki_article_chunking_multi_level = config.get('Chunking', 'mediawiki_article_chunking_multi_level', fallback='False')
+        mediawiki_article_language = config.get('Chunking', 'mediawiki_article_language', fallback='english')
+        #
+        # Mediawiki Dump Chunking
+        mediawiki_dump_chunking_method = config.get('Chunking', 'mediawiki_dump_chunking_method', fallback='words')
+        mediawiki_dump_chunk_max_size = config.get('Chunking', 'mediawiki_dump_chunk_max_size', fallback='400')
+        mediawiki_dump_chunk_overlap = config.get('Chunking', 'mediawiki_dump_chunk_overlap', fallback='200')
+        mediawiki_dump_adaptive_chunking = config.get('Chunking', 'mediawiki_dump_adaptive_chunking', fallback='False')
+        mediawiki_dump_chunking_multi_level = config.get('Chunking', 'mediawiki_dump_chunking_multi_level', fallback='False')
+        mediawiki_dump_language = config.get('Chunking', 'mediawiki_dump_language', fallback='english')
+        #
+        # Obsidian Note Chunking
+        obsidian_note_chunking_method = config.get('Chunking', 'obsidian_note_chunking_method', fallback='words')
+        obsidian_note_chunk_max_size = config.get('Chunking', 'obsidian_note_chunk_max_size', fallback='400')
+        obsidian_note_chunk_overlap = config.get('Chunking', 'obsidian_note_chunk_overlap', fallback='200')
+        obsidian_note_adaptive_chunking = config.get('Chunking', 'obsidian_note_adaptive_chunking', fallback='False')
+        obsidian_note_chunking_multi_level = config.get('Chunking', 'obsidian_note_chunking_multi_level', fallback='False')
+        obsidian_note_language = config.get('Chunking', 'obsidian_note_language', fallback='english')
+        #
+        # Podcast Chunking
+        podcast_chunking_method = config.get('Chunking', 'podcast_chunking_method', fallback='words')
+        podcast_chunk_max_size = config.get('Chunking', 'podcast_chunk_max_size', fallback='400')
+        podcast_chunk_overlap = config.get('Chunking', 'podcast_chunk_overlap', fallback='200')
+        podcast_adaptive_chunking = config.get('Chunking', 'podcast_adaptive_chunking', fallback='False')
+        podcast_chunking_multi_level = config.get('Chunking', 'podcast_chunking_multi_level', fallback='False')
+        podcast_language = config.get('Chunking', 'podcast_language', fallback='english')
+        #
+        # Text Chunking
+        text_chunking_method = config.get('Chunking', 'text_chunking_method', fallback='words')
+        text_chunk_max_size = config.get('Chunking', 'text_chunk_max_size', fallback='400')
+        text_chunk_overlap = config.get('Chunking', 'text_chunk_overlap', fallback='200')
+        text_adaptive_chunking = config.get('Chunking', 'text_adaptive_chunking', fallback='False')
+        text_chunking_multi_level = config.get('Chunking', 'text_chunking_multi_level', fallback='False')
+        text_language = config.get('Chunking', 'text_language', fallback='english')
+        #
+        # Video Transcription Chunking
+        video_chunking_method = config.get('Chunking', 'video_chunking_method', fallback='words')
+        video_chunk_max_size = config.get('Chunking', 'video_chunk_max_size', fallback='400')
+        video_chunk_overlap = config.get('Chunking', 'video_chunk_overlap', fallback='200')
+        video_adaptive_chunking = config.get('Chunking', 'video_adaptive_chunking', fallback='False')
+        video_chunking_multi_level = config.get('Chunking', 'video_chunking_multi_level', fallback='False')
+        video_language = config.get('Chunking', 'video_language', fallback='english')
+        #
+        chunking_types = 'article', 'audio', 'book', 'document', 'mediawiki_article', 'mediawiki_dump', 'obsidian_note', 'podcast', 'text', 'video'
 
         # Retrieve Embedding model settings from the configuration file
         embedding_model = config.get('Embeddings', 'embedding_model', fallback='')
@@ -892,8 +977,69 @@ def load_and_log_configs():
                 'adaptive_chunking': adaptive_chunking,
                 'multi_level': chunking_multi_level,
                 'chunk_language': chunk_language,
-                'chunk_overlap': chunk_overlap
+                'chunk_overlap': chunk_overlap,
+                'article_chunking_method': article_chunking_method,
+                'article_chunk_max_size': article_chunk_max_size,
+                'article_chunk_overlap': article_chunk_overlap,
+                'article_adaptive_chunking': article_adaptive_chunking,
+                'article_chunking_multi_level': article_chunking_multi_level,
+                'article_language': article_language,
+                'audio_chunking_method': audio_chunking_method,
+                'audio_chunk_max_size': audio_chunk_max_size,
+                'audio_chunk_overlap': audio_chunk_overlap,
+                'audio_adaptive_chunking': audio_adaptive_chunking,
+                'audio_chunking_multi_level': audio_chunking_multi_level,
+                'audio_language': audio_language,
+                'book_chunking_method': book_chunking_method,
+                'book_chunk_max_size': book_chunk_max_size,
+                'book_chunk_overlap': book_chunk_overlap,
+                'book_adaptive_chunking': book_adaptive_chunking,
+                'book_chunking_multi_level': book_chunking_multi_level,
+                'book_language': book_language,
+                'document_chunking_method': document_chunking_method,
+                'document_chunk_max_size': document_chunk_max_size,
+                'document_chunk_overlap': document_chunk_overlap,
+                'document_adaptive_chunking': document_adaptive_chunking,
+                'document_chunking_multi_level': document_chunking_multi_level,
+                'document_language': document_language,
+                'mediawiki_article_chunking_method': mediawiki_article_chunking_method,
+                'mediawiki_article_chunk_max_size': mediawiki_article_chunk_max_size,
+                'mediawiki_article_chunk_overlap': mediawiki_article_chunk_overlap,
+                'mediawiki_article_adaptive_chunking': mediawiki_article_adaptive_chunking,
+                'mediawiki_article_chunking_multi_level': mediawiki_article_chunking_multi_level,
+                'mediawiki_article_language': mediawiki_article_language,
+                'mediawiki_dump_chunking_method': mediawiki_dump_chunking_method,
+                'mediawiki_dump_chunk_max_size': mediawiki_dump_chunk_max_size,
+                'mediawiki_dump_chunk_overlap': mediawiki_dump_chunk_overlap,
+                'mediawiki_dump_adaptive_chunking': mediawiki_dump_adaptive_chunking,
+                'mediawiki_dump_chunking_multi_level': mediawiki_dump_chunking_multi_level,
+                'mediawiki_dump_language': mediawiki_dump_language,
+                'obsidian_note_chunking_method': obsidian_note_chunking_method,
+                'obsidian_note_chunk_max_size': obsidian_note_chunk_max_size,
+                'obsidian_note_chunk_overlap': obsidian_note_chunk_overlap,
+                'obsidian_note_adaptive_chunking': obsidian_note_adaptive_chunking,
+                'obsidian_note_chunking_multi_level': obsidian_note_chunking_multi_level,
+                'obsidian_note_language': obsidian_note_language,
+                'podcast_chunking_method': podcast_chunking_method,
+                'podcast_chunk_max_size': podcast_chunk_max_size,
+                'podcast_chunk_overlap': podcast_chunk_overlap,
+                'podcast_adaptive_chunking': podcast_adaptive_chunking,
+                'podcast_chunking_multi_level': podcast_chunking_multi_level,
+                'podcast_language': podcast_language,
+                'text_chunking_method': text_chunking_method,
+                'text_chunk_max_size': text_chunk_max_size,
+                'text_chunk_overlap': text_chunk_overlap,
+                'text_adaptive_chunking': text_adaptive_chunking,
+                'text_chunking_multi_level': text_chunking_multi_level,
+                'text_language': text_language,
+                'video_chunking_method': video_chunking_method,
+                'video_chunk_max_size': video_chunk_max_size,
+                'video_chunk_overlap': video_chunk_overlap,
+                'video_adaptive_chunking': video_adaptive_chunking,
+                'video_chunking_multi_level': video_chunking_multi_level,
+                'video_language': video_language,
             },
+            #chunking_types = 'article', 'audio', 'book', 'document', 'mediawiki_article', 'mediawiki_dump', 'obsidian_note', 'podcast', 'text', 'video'
             'db_config': {
                 'prompt_path': get_project_relative_path(config.get('Prompts', 'prompt_path', fallback='Databases/prompts.db')),
                 'db_type': config.get('Database', 'type', fallback='sqlite'),

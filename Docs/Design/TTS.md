@@ -17,7 +17,7 @@ https://github.com/kyutai-labs/hibiki
 https://metis-demo.github.io/#metis-tts
 https://github.com/RobViren/kokovoicelab
 https://huggingface.co/collections/stepfun-ai/step-audio-67b33accf45735bb21131b0b
-
+https://github.com/mbzuai-oryx/LLMVoX
 
 
 ### Services

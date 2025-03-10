@@ -11,10 +11,12 @@
 ## All Automated. All Local. All Yours.
 </div>
 
-### Latest Update (2/6/2025):
+### Latest Update (3/9/2025):
 <details>
 
-- F
+- Working on TTS support for more models
+- Adding temp file upload for chatting without ingesting files into the DB
+- 
 </details>
 
 ### [Public Demo on HuggingFace Spaces](https://huggingface.co/spaces/oceansweep/Vid-Summarizer/?__theme=dark)- Demo is not working!

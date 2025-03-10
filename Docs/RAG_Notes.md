@@ -1,151 +1,66 @@
 # RAG Notes
 
 
-Unsorted
-	https://github.com/plageon/HtmlRAG
-		https://arxiv.org/abs/2411.02959v1
-	https://github.com/run-llama/llama_parse/blob/main/examples/multimodal/multimodal_report_generation.ipynb
-	https://www.youtube.com/watch?v=aqtX-sGbevw
-	https://arxiv.org/abs/2411.19539
-https://arxiv.org/pdf/2501.09136v1
-https://arxiv.org/pdf/2501.07572v2
-https://arxiv.org/pdf/2412.17149
-	https://arxiv.org/abs/2410.21012
-https://arxiv.org/abs/2410.03608
-https://huggingface.co/papers/2502.09411
-https://github.com/opendatalab/OHR-Bench
-https://zerobench.github.io/
-https://huggingface.co/papers/2502.08826
-https://github.com/topoteretes/cognee?utm_source=newsletter.danielmiessler.com&utm_medium=newsletter&utm_campaign=unsupervised-learning-no-469-standard-edition
-https://research.google/blog/chain-of-agents-large-language-models-collaborating-on-long-context-tasks/
-https://arxiv.org/abs/2501.15228
-	https://arxiv.org/abs/2410.20088
-https://research.google/blog/speculative-rag-enhancing-retrieval-augmented-generation-through-drafting/
-https://arxiv.org/abs/2502.01142
-https://medium.com/towards-data-science/how-to-create-a-rag-evaluation-dataset-from-documents-140daa3cbe71
-https://arxiv.org/abs/2401.15884
-
-https://github.com/Lokesh-Chimakurthi/vision-rag
-
-https://github.com/tjmlabs/ColiVara
-
-https://huggingface.co/vidore/colqwen2-v0.1
-https://colivara.com/
-https://github.com/integral-business-intelligence/chroma-auditor?tab=readme-ov-file
-https://huggingface.co/papers/2502.00306
-https://pub.towardsai.net/multimodal-rag-unveiled-a-deep-dive-into-cutting-edge-advancements-0eeb514c3ac4
-https://arxiv.org/abs/2501.14342
-	https://arxiv.org/abs/2410.13765
-	https://arxiv.org/pdf/2409.15699v1
-	https://aibyhand.substack.com/p/beginners-guide-to-graph-rag
-	https://aibyhand.substack.com/p/beginners-guide-to-rag-evaluation
-	https://www.louisbouchard.ai/indexing-methods/
-	https://github.com/circlemind-ai/fast-graphrag
-	https://github.com/Kain-90/RAG-Play
-	https://arxiv.org/abs/2412.03736
-	https://arxiv.org/abs/2403.10131
-	https://arxiv.org/abs/2412.01572
-	https://pub.towardsai.net/around-the-rag-in-80-questions-part-ii-4df03c6dba86
-	https://www.uber.com/en-IN/blog/introducing-the-prompt-engineering-toolkit/
-	https://arxiv.org/abs/2409.14924
-https://arxiv.org/abs/2412.02830
-https://arxiv.org/abs/2210.03629
-https://arxiv.org/abs/2407.04125
-https://hub.athina.ai/p/34eedbf5-4db2-4c88-84a4-7a192fd5b0ed/
-https://cobusgreyling.medium.com/four-levels-of-rag-research-from-microsoft-fdc54388f0ff
-https://arxiv.org/html/2412.00239v1
-https://arxiv.org/abs/2412.02830
-https://arxiv.org/abs/2502.20964
-https://softwaredoug.com/blog/2025/02/08/elasticsearch-hybrid-search
-https://arxiv.org/abs/2502.20995
-https://lascari.ai/writing/2025/02/10/image-gen-tagging/
-https://arxiv.org/pdf/2410.04790v1
-https://arxiv.org/html/2412.02035v1
-https://towardsdatascience.com/dragin-dynamic-retrieval-augmented-generation-based-on-the-information-needs-of-large-language-dbdb9aabc1ef
-https://towardsdatascience.com/improve-your-rag-context-recall-by-40-with-an-adapted-embedding-model-5d4a8f583f32
-https://arxiv.org/abs/2412.06078
-https://www.zyphra.com/post/the-mixture-of-pageranks-retriever-for-long-context-pre-processing
-https://www.timescale.com/blog/finding-the-best-open-source-embedding-model-for-rag
-https://weaviate.io/blog/late-chunking
-https://github.com/superlinear-ai/raglite
-https://arxiv.org/abs/2412.15101
-https://arxiv.org/abs/2412.14510
-https://towardsdatascience.com/advanced-retrieval-techniques-for-better-rags-c53e1b03c183
-https://ai.gopubby.com/agentic-rags-extending-rags-to-sql-databases-1509b25ca3e7
-https://ai.plainenglish.io/a-deep-dive-into-golden-retriever-eea3396af3b4
-https://github.com/AhmedAl93/multimodal-agentic-RAG
-https://hub.athina.ai/athina-originals/end-to-end-implementation-of-unstructured-rag/
 https://medium.com/@eliot64/bridging-legal-ai-and-trust-how-we-won-the-llm-x-law-hackathon-45081a8681d9
-https://arxiv.org/abs/2412.15563
-https://arxiv.org/pdf/2410.10293v1
-https://arxiv.org/pdf/2409.02098v1
-https://github.com/OpenSPG/KAG
-https://generativeai.pub/graph-rag-has-awesome-potential-but-currently-has-serious-flaws-c052a8a3107e
-https://pub.towardsai.net/kag-graph-multimodal-rag-llm-agents-powerful-ai-reasoning-b3da38d31358
-https://medium.com/@florian_algo/ai-innovations-and-insights-14-funnelrag-and-craft-8436f97286bb
-https://arxiv.org/abs/2412.19442
-https://arxiv.org/abs/2412.15605
-https://arxiv.org/html/2412.18069v1
-https://github.com/smallporridge/AssistRAG
-https://medium.com/@samarrana407/why-knowledge-augmented-generation-kag-is-the-best-approach-to-rag-2e7820228087
-https://pub.towardsai.net/revisiting-chunking-in-the-rag-pipeline-9aab8b1fdbe7
-https://towardsdatascience.com/ai-powered-information-extraction-and-matchmaking-0408c93ec1b9
-https://arxiv.org/abs/2501.05366
-https://github.com/sunnynexus/Search-o1
-https://arxiv.org/abs/2501.02772
-https://arxiv.org/abs/2501.00332
-https://huggingface.co/MMDocIR
-https://github.com/opendatalab/OmniDocBench
+https://github.com/Kain-90/RAG-Play
+https://github.com/superlinear-ai/raglite
 
 
-GraphRAG
-	https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/	
-	https://github.com/esenthil2018/graph_rag/tree/main
-	https://towardsdatascience.com/how-to-implement-graph-rag-using-knowledge-graphs-and-vector-databases-60bb69a22759
-	https://towardsdatascience.com/how-to-implement-graph-rag-using-knowledge-graphs-and-vector-databases-60bb69a22759
-	https://towardsdatascience.com/text-to-knowledge-graph-made-easy-with-graph-maker-f3f890c0dbe8
-	https://www.arxiv.org/abs/2502.13339
-	https://towardsdatascience.com/building-a-knowledge-graph-from-scratch-using-llms-f6f677a17f07
-	https://iopscience.iop.org/article/10.1088/2632-2153/ad7228/pdf
-	https://medium.com/thoughts-on-machine-learning/building-dynamic-knowledge-graphs-using-open-source-llms-06a870e1bc4f
-	https://ai.plainenglish.io/modeling-ai-semantic-memory-with-knowledge-graphs-1ce06f683433
-	https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a
-	https://towardsdatascience.com/building-knowledge-graphs-with-llm-graph-transformer-a91045c49b59
-	https://arxiv.org/abs/2412.03589
-	https://arxiv.org/abs/2412.03736
-	https://arxiv.org/abs/2412.04119
-https://medium.com/@dickson.lukose/ontology-reasoning-imperative-for-intelligent-graphrag-part-1-2-0018265b987c
-	https://aibyhand.substack.com/p/beginners-guide-to-graph-rag
-	https://github.com/gusye1234/nano-graphrag
-	https://arxiv.org/abs/2412.03589
-	https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375
-	https://towardsdatascience.com/towards-named-entity-disambiguation-with-graph-embeddings-ef164aaad37c
-	https://generativeai.pub/advanced-rag-retrieval-strategies-using-knowledge-graphs-12c9ce54d2da
-	https://medium.com/@ianormy/microsoft-graphrag-with-an-rdf-knowledge-graph-part-2-d8d291a39ed1
-	https://generativeai.pub/knowledge-graph-extraction-visualization-with-local-llm-from-unstructured-text-a-history-example-94c63b366fed?gi=b98ffc33dcbc
-	https://memgraph.com/webinars/optimizing-insulin-management-the-role-of-graphrag-in-patient-care
-	https://ai.plainenglish.io/metagraphs-and-hypergraphs-for-complex-ai-agent-memory-and-rag-717f6f3589f5
-	https://arxiv.org/html/2411.15671v1
-	https://arxiv.org/pdf/2410.04739v1
-	https://towardsdatascience.com/how-to-query-a-knowledge-graph-with-llms-using-grag-38bfac47a322
-	https://arxiv.org/abs/2408.04187
-	https://pub.towardsai.net/building-a-knowledge-graph-from-unstructured-text-data-a-step-by-step-guide-c14c926c2229
-	https://www.youtube.com/watch?v=g6xBklAIrsA
-	https://neuml.hashnode.dev/advanced-rag-with-graph-path-traversal
-https://volodymyrpavlyshyn.medium.com/unified-knowledge-graph-model-rdf-rdf-vs-lpg-the-end-of-war-a7c14d6ac76f
-	https://github.com/zjunlp/OneKE
-https://blog.gopenai.com/llm-ontology-prompting-for-knowledge-graph-extraction-efdcdd0db3a1?gi=1d8915f0da5e
-	https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06
-	https://medium.com/@dickson.lukose/ontology-modelling-and-engineering-4df8b6b9f3a5
-	https://github.com/zjukg/KG-LLM-Papers
-https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a
-https://news.ycombinator.com/item?id=34605772
-https://arxiv.org/abs/2501.02157
-https://www.linkedin.com/pulse/taxonomy-ontology-knowledge-graph-rajib-deb-oedkc/
-	https://medium.com/@researchgraph/dynamic-knowledge-graphs-a-next-step-for-data-representation-c35a205a520a
-	https://pub.towardsai.net/exploring-and-comparing-graph-based-rag-approaches-microsoft-graphrag-vs-neo4j-langchain-3837cd3dddef?gi=35f7e36d3e71
-	https://medium.com/@infiniflowai/how-our-graphrag-reveals-the-hidden-relationships-of-jon-snow-and-the-mother-of-dragons-bd89084f64ec
+Unsorted
 
+Graphs (GraphRAG / KnowledgeGraphs)
+	GARLIC
+		https://arxiv.org/pdf/2410.04790v1
+	101
+		https://www.byhand.ai/p/beginners-guide-to-graph-rag
+		https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375/
+	About
+		https://github.com/zjukg/KG-LLM-Papers
+		https://arxiv.org/pdf/2502.11371
+		https://generativeai.pub/graph-rag-has-awesome-potential-but-currently-has-serious-flaws-c052a8a3107e?gi=3852d6a64701
+		https://news.ycombinator.com/item?id=34605772
+		https://medium.com/@dickson.lukose/ontology-modelling-and-engineering-4df8b6b9f3a5
+		https://arxiv.org/html/2411.15671v1
+		https://ai.plainenglish.io/metagraphs-and-hypergraphs-for-complex-ai-agent-memory-and-rag-717f6f3589f5
+		https://generativeai.pub/knowledge-graph-extraction-visualization-with-local-llm-from-unstructured-text-a-history-example-94c63b366fed?gi=876173cfaae4
+		https://medium.com/@dickson.lukose/ontology-reasoning-imperative-for-intelligent-graphrag-part-1-2-0018265b987c
+		https://medium.com/@ianormy/microsoft-graphrag-with-an-rdf-knowledge-graph-part-2-d8d291a39ed1
+	Creation of
+			https://arxiv.org/abs/2412.03589
+		https://iopscience.iop.org/article/10.1088/2632-2153/ad7228/pdf
+		https://arxiv.org/abs/2411.19539
+	Knowledge-Augmented Gen
+		https://github.com/OpenSPG/KAG
+		https://pub.towardsai.net/kag-graph-multimodal-rag-llm-agents-powerful-ai-reasoning-b3da38d31358
+	Implement
+		https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06/
+		https://blog.gopenai.com/llm-ontology-prompting-for-knowledge-graph-extraction-efdcdd0db3a1?gi=23252228d718
+		https://pub.towardsai.net/building-a-knowledge-graph-from-unstructured-text-data-a-step-by-step-guide-c14c926c2229
+		https://arxiv.org/abs/2408.04187
+		https://towardsdatascience.com/how-to-query-a-knowledge-graph-with-llms-using-grag-38bfac47a322/
+		https://github.com/zjunlp/OneKE
+		https://ai.plainenglish.io/unified-knowledge-graph-model-rdf-rdf-vs-lpg-the-end-of-war-a7c14d6ac76f
+		https://neuml.hashnode.dev/advanced-rag-with-graph-path-traversal
+		https://www.youtube.com/watch?v=g6xBklAIrsA
+		https://towardsdatascience.com/how-to-implement-graph-rag-using-knowledge-graphs-and-vector-databases-60bb69a22759
+		https://towardsdatascience.com/text-to-knowledge-graph-made-easy-with-graph-maker-f3f890c0dbe8
+		https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a/
+		https://towardsdatascience.com/building-a-knowledge-graph-from-scratch-using-llms-f6f677a17f07/
+		https://medium.com/thoughts-on-machine-learning/building-dynamic-knowledge-graphs-using-open-source-llms-06a870e1bc4f
+		https://ai.plainenglish.io/modeling-ai-semantic-memory-with-knowledge-graphs-1ce06f683433
+		https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a/
+		https://arxiv.org/abs/2412.04119
+		https://medium.com/@infiniflowai/how-our-graphrag-reveals-the-hidden-relationships-of-jon-snow-and-the-mother-of-dragons-bd89084f64ec
+		https://pub.towardsai.net/exploring-and-comparing-graph-based-rag-approaches-microsoft-graphrag-vs-neo4j-langchain-3837cd3dddef
+		https://medium.com/@researchgraph/dynamic-knowledge-graphs-a-next-step-for-data-representation-c35a205a520a
+		https://arxiv.org/abs/2501.02157
+		https://arxiv.org/abs/2412.03589
+		https://github.com/circlemind-ai/fast-graphrag
+		https://github.com/gusye1234/nano-graphrag
+	Models
+		https://www.arxiv.org/abs/2502.13339
+	Retrieval
+		https://generativeai.pub/advanced-rag-retrieval-strategies-using-knowledge-graphs-12c9ce54d2da
 
 Context Relevancy
 	https://arxiv.org/abs/2404.10198
@@ -153,6 +68,128 @@ Context Relevancy
 ```
 @Rock-star-007 from reddit: I added 3 nodes in my agent - query intent identifier, query rephraser , search_scope identifier. You try to identify what what the user is intending to ask. The rephrase the question as per the intent. You need to write prompts for rephrasing accordingly. Then identify what specific documents the user might be talking about. Then perform retrieval step with appropriate scope, then do generation. 
 ```
+
+
+Improvements
+	https://arxiv.org/pdf/2501.07391
+	https://cobusgreyling.medium.com/four-levels-of-rag-research-from-microsoft-fdc54388f0ff
+	https://arxiv.org/html/2412.00239v1#S6
+	https://towardsdatascience.com/advanced-retrieval-techniques-for-better-rags-c53e1b03c183/
+	https://towardsdatascience.com/5-proven-query-translation-techniques-to-boost-your-rag-performance-47db12efe971/
+	https://arxiv.org/abs/2412.19442
+	https://pub.towardsai.net/revisiting-chunking-in-the-rag-pipeline-9aab8b1fdbe7
+
+
+Bias
+	https://arxiv.org/pdf/2502.17390
+
+
+
+Fine-tuning RAG Models
+	https://arxiv.org/abs/2412.15563
+	CORAG
+		https://arxiv.org/abs/2501.14342
+	PA-RAG
+		https://arxiv.org/abs/2412.14510
+	RAFT
+		https://arxiv.org/abs/2403.10131
+
+
+
+
+RAG 'Styles'
+	Agentic
+		https://arxiv.org/pdf/2501.09136v1
+		https://arxiv.org/pdf/2412.17149
+		https://research.google/blog/chain-of-agents-large-language-models-collaborating-on-long-context-tasks/
+		MMOA-RAG
+			https://arxiv.org/abs/2501.15228
+		Search-O1
+			https://github.com/sunnynexus/Search-o1
+	AssistRAG
+		https://github.com/smallporridge/AssistRAG
+	Cache-Augmented-Generation
+		https://arxiv.org/abs/2412.15605
+	CRAG - Corrective RAG
+		https://arxiv.org/abs/2401.15884
+	DeepRAG
+		https://arxiv.org/abs/2502.01142
+	FACT - Multi-fact retrieval
+		https://arxiv.org/abs/2410.21012
+	FlexRAG
+		https://arxiv.org/pdf/2409.15699v1
+	GEAR
+		https://arxiv.org/abs/2501.02772
+	HTMLRag - Retrieval works better with structured text like HTML vs unstructured plaintext
+		https://github.com/plageon/HtmlRAG
+		https://arxiv.org/abs/2411.02959v1
+	Knowledge-Agumented Retrieval
+		https://medium.com/@samarrana407/why-knowledge-augmented-generation-kag-is-the-best-approach-to-rag-2e7820228087
+	Knowledge-Aware-Retrieval
+		https://arxiv.org/abs/2410.13765
+	MAIN-rag
+		https://arxiv.org/abs/2501.00332
+	RankCOT
+		https://arxiv.org/pdf/2502.17888
+		https://github.com/NEUIR/RankCoT
+	RARE - Retrieval-Augmented Reasoning Enhancement for Large Language Models
+		https://arxiv.org/abs/2412.02830
+	RaRE - RAG with in-contex examples(?)
+		https://arxiv.org/abs/2410.20088
+		Speculative RAG
+			https://research.google/blog/speculative-rag-enhancing-retrieval-augmented-generation-through-drafting/
+	ReACT
+		https://arxiv.org/abs/2210.03629
+	Review-then-Refine
+		https://arxiv.org/abs/2412.15101
+	TableRAG
+		https://arxiv.org/pdf/2410.04739v1
+	TrustRAG
+		https://arxiv.org/pdf/2501.00879
+	VLM
+		https://github.com/llm-lab-org/Multimodal-RAG-Survey
+		https://lascari.ai/writing/2025/02/10/image-gen-tagging/
+		https://arxiv.org/abs/2502.08826
+		https://github.com/Lokesh-Chimakurthi/vision-rag
+		https://github.com/AhmedAl93/multimodal-agentic-RAG
+		https://github.com/tjmlabs/ColiVara
+		https://huggingface.co/vidore/colqwen2-v0.1
+		https://colivara.com/
+		https://pub.towardsai.net/multimodal-rag-unveiled-a-deep-dive-into-cutting-edge-advancements-0eeb514c3ac4
+		https://arxiv.org/abs/2502.20964
+
+
+Ranking
+	https://arxiv.org/pdf/2409.11598
+
+Retrieval
+	https://arxiv.org/abs/2412.03736
+	https://arxiv.org/abs/2409.14924
+	https://weaviate.io/blog/late-chunking
+	https://softwaredoug.com/blog/2025/02/08/elasticsearch-hybrid-search
+	https://arxiv.org/abs/2412.03736
+	DRIFT
+		https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/
+	FunnelRAG
+		https://arxiv.org/pdf/2410.10293v1
+	GoldenRetriever
+		https://ai.plainenglish.io/a-deep-dive-into-golden-retriever-eea3396af3b4
+	Mixture-of-PageRanks
+		https://arxiv.org/abs/2412.06078
+		https://www.zyphra.com/post/the-mixture-of-pageranks-retriever-for-long-context-pre-processing
+	DRAGIN
+		https://arxiv.org/abs/2403.10081
+		https://github.com/oneal2000/DRAGIN/tree/main
+	MBA-RAG
+		https://arxiv.org/abs/2412.01572
+		https://github.com/FUTUREEEEEE/MBA
+
+
+
+Vector-related
+	https://www.louisbouchard.ai/indexing-methods/
+
+
 
 ### Links
 - RAG 101

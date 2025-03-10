@@ -17,8 +17,9 @@ https://github.com/kyutai-labs/hibiki
 https://metis-demo.github.io/#metis-tts
 https://github.com/RobViren/kokovoicelab
 https://huggingface.co/collections/stepfun-ai/step-audio-67b33accf45735bb21131b0b
-
-
+https://github.com/mbzuai-oryx/LLMVoX
+https://github.com/abus-aikorea/voice-pro
+https://github.com/rmusser01/LiveBench/tree/llamacpp-api
 
 ### Services
 - Google Cloud Text-to-Speech

@@ -53,7 +53,7 @@
 Website:
   https://github.com/AnswerDotAI/fasthtml-example/tree/main/02_chatbot
 
-
+https://uxdesign.cc/a-study-of-gatcha-games-the-ux-of-the-pokemon-tcg-pocket-app-b291c78db86fc
 https://github.com/sshh12/spark-stack
 https://github.com/abi/screenshot-to-
 https://data.perkins.org/
@@ -118,6 +118,13 @@ https://uxdesign.cc/ai-and-cognitive-offloading-sharing-the-thinking-process-wit
 https://www.typingmind.com
 https://github.com/felladrin/MiniSearch
 
+
+Turn into notes
+  https://uxdesign.cc/ux-how-can-i-trust-you-47f1c8a71213
+  https://uxdesign.cc/hyper-personalization-a-practical-guide-8e5f7b89e26e
+  https://uxdesign.cc/thinking-past-the-cliche-of-llms-ai-design-patterns-c9b849fce9e8
+  https://uxdesign.cc/ui-ux-micro-tips-8-bit-anniversary-edition-250a04f338e3
+  https://blog.kristi.digital/p/designers-coffee-western-vs-asian-product-design
 
 
 Not waifus, but clippy:

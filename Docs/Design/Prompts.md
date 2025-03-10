@@ -4,6 +4,7 @@
 https://github.com/PySpur-Dev/PySpur
 https://github.com/itsPreto/tangent
 https://arxiv.org/abs/2412.13171
+https://www.uber.com/en-IN/blog/introducing-the-prompt-engineering-toolkit/
 https://github.com/LouisShark/chatgpt_system_prompt
 https://github.com/microsoft/PromptWizard
 https://github.com/qixucen/atom

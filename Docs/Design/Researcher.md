@@ -184,7 +184,9 @@ https://github.com/SamuelSchmidgall/AgentLaboratory
 https://github.com/exa-labs/company-researcher
 https://zjunlp.github.io/project/OmniThink/
 
-
+Structured report Output
+    https://www.youtube.com/watch?v=aqtX-sGbevw
+    https://github.com/run-llama/llama_cloud_services/blob/main/examples/report/basic_report.ipynb
 
 AI Web Researcher Ollama
     https://github.com/TheBlewish/Automated-AI-Web-Researcher-Ollama/blob/main/Self_Improving_Search.py

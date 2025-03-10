@@ -7,6 +7,7 @@ Screw writing sql queries. I want to be able to ask questions in plain english a
 ### Link Dump:
 https://docs.cohere.com/v2/page/sql-agent-cohere-langchain
 https://arxiv.org/abs/2411.18915
+https://ai.gopubby.com/agentic-rags-extending-rags-to-sql-databases-1509b25ca3e7
 https://github.com/premAI-io/premsql
 https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/sql/#sql-query-semantic-equivalence
 https://github.com/hasura/pacha/tree/main

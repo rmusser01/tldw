@@ -4,9 +4,23 @@
 https://medium.com/@eliot64/bridging-legal-ai-and-trust-how-we-won-the-llm-x-law-hackathon-45081a8681d9
 https://github.com/Kain-90/RAG-Play
 https://github.com/superlinear-ai/raglite
+https://levelup.gitconnected.com/testing-18-rag-techniques-to-find-the-best-094d166af27f
+https://arxiv.org/abs/2503.10357
+https://arxiv.org/pdf/2502.08826v2
+https://github.com/yale-nlp/MCTS-RAG
+https://arxiv.org/abs/2503.21729
+
+
 
 
 Unsorted
+https://ai.gopubby.com/8-common-mistakes-in-vector-search-and-how-to-avoid-them-e48d849c23f8
+
+Agentic RAG
+	https://arxiv.org/pdf/2501.09136
+	https://github.com/asinghcsu/AgenticRAG-Survey
+
+
 
 Graphs (GraphRAG / KnowledgeGraphs)
 	GARLIC

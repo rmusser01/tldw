@@ -14,6 +14,16 @@
 ----------------------------------------------------------------------------------------------------------------
 
 https://github.com/JackHopkins/factorio-learning-environment
+https://github.com/lechmazur
+https://arxiv.org/abs/2503.05244
+https://liveideabench.com/
+https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete
+https://arxiv.org/abs/2504.03352
+https://arxiv.org/html/2411.12990v1
+
+
+System Eval
+    https://github.com/plasma-umass/scalene
 
 
     Answer Correctness: Checks the accuracy of the generated llm response compared to the ground truth.
